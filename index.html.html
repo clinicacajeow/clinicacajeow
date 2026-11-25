@@ -1,0 +1,1280 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Clínica Cajeow</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Clínica Cajeow Desenvolvimento Humano. Psicologia, Fonoaudiologia e Avaliação Neuropsicológica em Vila Yara, Osasco.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Mulish:wght@400;600;700&display=swap"><style>
+/* Estrutura de clínica moderna (cabeçalho branco com botão, faixa de destaque colorida, cartões com ícones, etapas, faixa de convênios),
+   com a paleta e a tipografia da logo: azul, menta e rosa, Quicksand. Sem contornos grossos, sem formas soltas: cartões limpos e sombra suave. */
+:root{
+  --bg:#FFFAF3; --bg2:#FDF1E6; --surface:#FFFFFF; --ink:#16304F; --ink2:#55637A; --line:#F0E3D3; --line2:#E2CFB9;
+  --sky:#0E9A9A; --sky2:#4CC7C4; --mint:#2FAE86; --mint2:#6DD3A8; --rose:#E24F82; --rose2:#F27AA3; --sun:#F7B733; --coral:#F2784B; --green:#6DBE5B;
+  --t-sky:#D8F2F0; --t-mint:#DDF6EA; --t-pink:#FFE3EC; --t-sun:#FFF0CC; --t-coral:#FFE5DA;
+  --band:#0F4A4A; --on-band:#FFFFFF; --on-band2:#CFE9E4; --badge:#FFFFFF; --shadow:rgba(60,40,20,.16);
+  --head:'Quicksand','Nunito','Trebuchet MS',sans-serif;
+  --body:'Mulish','Segoe UI',system-ui,-apple-system,sans-serif;
+  --serif:var(--head); --sans:var(--body); --brand:var(--head);
+  --grad:linear-gradient(120deg,#FFE3EC 0%,#FFF0CC 50%,#DDF6EA 100%);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#13222B; --bg2:#182B35; --surface:#1B313C; --ink:#F6F1EA; --ink2:#B7C4C8; --line:#2B4450; --line2:#3B5866;
+  --sky:#5CD3CF; --mint:#6FD8B0; --rose:#FF8DB0; --t-sky:#1B4448; --t-mint:#1A4638; --t-pink:#4A2A38; --t-sun:#4A3F1F; --t-coral:#4A3024;
+  --band:#0A2C2C; --shadow:rgba(0,0,0,.45); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#13222B; --bg2:#182B35; --surface:#1B313C; --ink:#F6F1EA; --ink2:#B7C4C8; --line:#2B4450; --line2:#3B5866;
+  --sky:#5CD3CF; --mint:#6FD8B0; --rose:#FF8DB0; --t-sky:#1B4448; --t-mint:#1A4638; --t-pink:#4A2A38; --t-sun:#4A3F1F; --t-coral:#4A3024;
+  --band:#0A2C2C; --shadow:rgba(0,0,0,.45); color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:70;background:var(--surface)}
+h1,h2,h3,h4{font-family:var(--head);font-weight:700;line-height:1.15;margin:0;text-wrap:balance;letter-spacing:-.01em}
+h1{font-size:clamp(2.2rem,5vw,3.7rem)}
+h2{font-size:clamp(1.7rem,3.2vw,2.35rem)}
+h3{font-size:1.3rem}
+h4{font-size:1.1rem}
+p{margin:0}
+a{color:inherit}
+img,video{display:block;max-width:100%}
+button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--sky2);outline-offset:3px;border-radius:8px}
+.wrap{max-width:1140px;margin-inline:auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.lede{font-size:1.18rem;color:var(--ink2);max-width:62ch;line-height:1.65}
+.muted{color:var(--ink2)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+[hidden]{display:none!important}
+
+/* botões */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--head);font-weight:700;font-size:1rem;padding:14px 28px;border-radius:999px;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .2s,box-shadow .2s,background .2s,color .2s;line-height:1.2;text-align:center}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 22px -10px var(--shadow)}
+.btn svg{width:20px;height:20px;flex:none}
+.b-pink{background:var(--rose);color:#fff}
+.b-pink:hover{background:#C93A6C}
+.b-mint{background:var(--mint);color:#fff}
+.b-sky{background:var(--sky);color:#fff}
+.b-ghost{background:transparent;color:var(--ink);border-color:var(--line2)}
+.b-ghost:hover{border-color:var(--ink)}
+.b-wa{background:#1B9A52;color:#fff}
+.b-sun{background:#fff;color:#16304F}
+.b-line{background:transparent;color:#fff;border-color:rgba(255,255,255,.7)}
+.b-line:hover{background:rgba(255,255,255,.14)}
+.btn.sm{padding:10px 22px;font-size:.95rem}
+.tl{font-family:var(--head);font-weight:700;color:var(--sky);text-decoration:none;cursor:pointer;background:none;border:0;padding:0}
+.tl::after{content:"  \2192"}
+.tl:hover{text-decoration:underline}
+.back{display:inline-flex;gap:8px;align-items:center;margin-bottom:20px;font-family:var(--head);font-weight:700;font-size:.95rem;color:var(--ink2);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:8px 16px;cursor:pointer}
+.back::before{content:"\2190"}
+.back:hover{color:var(--ink);border-color:var(--line2)}
+
+/* cabeçalho */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:60;background:var(--surface);box-shadow:0 1px 0 var(--line),0 8px 24px -16px var(--shadow)}
+.top .wrap{display:flex;align-items:center;gap:20px;min-height:78px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;min-width:0}
+.brand .bd{width:50px;height:50px;border-radius:50%;background:var(--badge);display:grid;place-items:center;flex:none;box-shadow:0 0 0 2px var(--t-sky)}
+.brand .bd img{width:34px}
+.brand b{font-size:1.22rem;line-height:1.05;display:block;color:var(--sky)}
+.brand small{white-space:nowrap;font-size:.84rem;color:var(--mint);font-weight:700;font-family:var(--head)}
+.nav{margin-left:auto;display:flex;gap:22px;align-items:center}
+.nav a.l{white-space:nowrap;font-family:var(--head);text-decoration:none;font-weight:700;font-size:.97rem;color:var(--ink2);padding:6px 0;position:relative}
+.nav a.l::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:3px;border-radius:3px;background:var(--rose2);transform:scaleX(0);transition:transform .25s}
+.nav a.l:hover,.nav a.l.on{color:var(--ink)}.nav a.l:hover::after,.nav a.l.on::after{transform:scaleX(1)}
+.tag{font-size:.65rem;font-weight:700;background:var(--t-sun);color:#7A5200;border-radius:999px;padding:2px 8px;margin-left:6px;vertical-align:middle}
+.burger{display:none;margin-left:auto;background:var(--surface);border:2px solid var(--line2);border-radius:14px;width:46px;height:46px;cursor:pointer;place-items:center}
+.burger i{display:block;width:20px;height:3px;border-radius:3px;background:var(--ink);box-shadow:0 -6px 0 var(--ink),0 6px 0 var(--ink)}
+@media(max-width:1060px){.nav{display:none;position:absolute;left:0;right:0;top:100%;background:var(--surface);flex-direction:column;align-items:stretch;padding:8px max(20px,env(safe-area-inset-left,0px)) 22px;box-shadow:0 20px 30px -20px var(--shadow);gap:0}
+  .nav.open{display:flex}.nav a.l{padding:14px 0;font-size:1.05rem;border-bottom:1px solid var(--line)}.nav a.l::after{display:none}.nav .btn{margin-top:14px}.burger{display:grid}}
+@media(max-width:420px){.brand small{display:none}}
+
+/* símbolo animado */
+.logo{position:relative;aspect-ratio:555/495;width:100%;animation:breathe 5s ease-in-out infinite;transform-origin:50% 90%}
+.logo img{position:absolute;display:block}
+.logo .base{inset:0;width:100%;height:100%}
+.logo .p{pointer-events:none}
+.p-sorriso{left:15.856%;top:7.475%;width:21.261%;height:23.03%;transform-origin:70% 100%;animation:hop 3.2s ease-in-out infinite}
+.p-arco{left:37.477%;top:2.626%;width:25.946%;height:20.202%;transform-origin:50% 100%;animation:sway 4.6s ease-in-out infinite}
+.p-tulipa{left:63.784%;top:5.051%;width:24.865%;height:27.071%;transform-origin:18% 100%;animation:sway2 3.9s ease-in-out infinite}
+.p-flor-e{left:4.685%;top:31.313%;width:26.306%;height:29.899%;transform-origin:62% 100%;animation:wig 3.4s ease-in-out infinite}
+.p-flor-d{left:71.351%;top:32.121%;width:25.946%;height:29.091%;transform-origin:38% 100%;animation:wig 3.4s ease-in-out -1.7s infinite}
+.logo:hover .p{animation-duration:1.2s}
+@keyframes breathe{0%,100%{transform:scale(1)}50%{transform:scale(1.025)}}
+@keyframes hop{0%,100%{transform:translateY(0) rotate(0)}40%{transform:translateY(-7%) rotate(-5deg)}60%{transform:translateY(-3%) rotate(3deg)}}
+@keyframes sway{0%,100%{transform:rotate(-3deg) scale(1)}50%{transform:rotate(3deg) scale(1.05)}}
+@keyframes sway2{0%,100%{transform:rotate(-3.5deg)}50%{transform:rotate(4.5deg)}}
+@keyframes wig{0%,100%{transform:rotate(-3.5deg)}50%{transform:rotate(3.5deg) translateY(-1%)}}
+
+/* faixas em movimento */
+@keyframes slide{to{transform:translateX(-50%)}}
+.mqw{overflow:hidden;padding:26px 0;background:var(--surface);border-block:1px solid var(--line)}
+.mqw .track{display:flex;width:max-content;animation:slide 32s linear infinite;align-items:center}
+.mqw:hover .track,.rv:hover .track{animation-play-state:paused}
+.lg{display:grid;place-items:center;height:56px;padding:0 38px;flex:none;color:var(--ink2);font-family:var(--head);font-weight:700;font-size:1.25rem}
+.lg img{height:42px;width:auto;mix-blend-mode:multiply}
+
+/* páginas */
+.view{display:none;animation:fade .4s both}
+.view.on{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}}
+.page-h{padding-block:clamp(38px,6vw,70px) clamp(34px,5vw,54px);background:var(--grad)}
+.page-h h1{font-size:clamp(2rem,4.4vw,3.1rem);margin-bottom:14px;color:var(--ink)}
+.blk{padding-block:clamp(44px,6vw,76px)}
+.blk.alt{background:var(--bg2)}
+.blk.wh{background:var(--surface)}
+.two{display:grid;grid-template-columns:240px 1fr;gap:clamp(24px,5vw,64px);align-items:start}
+.two>h2,.two>h3{font-size:1.45rem;position:sticky;top:104px;padding-left:14px;border-left:4px solid var(--rose2)}
+@media(max-width:820px){.two{grid-template-columns:1fr;gap:18px}.two>h2,.two>h3{position:static}}
+.prose{display:grid;gap:16px;max-width:66ch;color:var(--ink2)}
+.prose strong{color:var(--ink)}
+.card,.cols3>div,.dl>div,.steps2 li,.phone,.sp-row,.cover,.rcard{background:var(--surface);border-radius:18px;box-shadow:0 1px 2px var(--shadow),0 14px 30px -22px var(--shadow)}
+.card{padding:clamp(20px,4vw,34px);min-width:0}
+.cols3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.cols3>div{padding:24px;border-top:5px solid var(--sky2)}
+.cols3>div:nth-child(2){border-top-color:var(--mint2)}.cols3>div:nth-child(3){border-top-color:var(--rose2)}
+.cols3 h3{font-size:1.2rem;margin-bottom:10px}
+.cols3 p,.cols3 li{color:var(--ink2);font-size:1rem}
+.cols3 ul{margin:0;padding-left:18px;display:grid;gap:5px}
+@media(max-width:820px){.cols3{grid-template-columns:1fr}}
+.plain{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.plain li{padding:14px 18px 14px 50px;color:var(--ink2);background:var(--surface);border-radius:14px;position:relative;box-shadow:0 1px 2px var(--shadow)}
+.plain li::before{content:"\2713";position:absolute;left:16px;top:50%;transform:translateY(-50%);width:24px;height:24px;border-radius:50%;background:var(--t-mint);color:var(--mint);display:grid;place-items:center;font-weight:700;font-size:.85rem}
+.dl{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin:0}
+.dl>div{padding:22px 24px;border-left:5px solid var(--mint2)}
+.dl>div:nth-child(3n+2){border-left-color:var(--sky2)}.dl>div:nth-child(3n){border-left-color:var(--rose2)}
+.dl dt{font-family:var(--head);font-weight:700;font-size:1.1rem;color:var(--ink);margin-bottom:6px}
+.dl dd{margin:0;color:var(--ink2);font-size:1rem}
+@media(max-width:700px){.dl{grid-template-columns:1fr}}
+.steps2{list-style:none;margin:0;padding:0;counter-reset:s;display:grid;gap:14px;max-width:820px}
+.steps2 li{counter-increment:s;display:grid;grid-template-columns:50px 1fr;gap:18px;padding:20px 22px;align-items:start}
+.steps2 li::before{content:counter(s);width:50px;height:50px;border-radius:50%;background:linear-gradient(135deg,var(--sky2),var(--mint2));color:#fff;display:grid;place-items:center;font-family:var(--head);font-weight:700;font-size:1.3rem}
+.steps2 b{display:block;font-family:var(--head);font-size:1.15rem;color:var(--ink);margin-bottom:3px}
+.steps2 span{color:var(--ink2)}
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin:0;padding:0;list-style:none}
+.tags li{background:var(--t-sky);color:var(--ink);border-radius:999px;padding:8px 18px;font-weight:600;font-size:.97rem}
+.tags li:nth-child(3n+2){background:var(--t-mint)}.tags li:nth-child(3n){background:var(--t-pink)}
+.warn{border-left:4px solid var(--sun);padding:6px 0 6px 16px;font-size:.93rem;color:var(--ink2);margin-top:18px;line-height:1.55}
+
+/* ícones */
+.ic{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;flex:none;background:var(--t-sky);color:var(--sky)}
+.ic svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.ic.m{background:var(--t-mint);color:var(--mint)}.ic.p{background:var(--t-pink);color:var(--rose)}.ic.s{background:var(--t-sun);color:#B7791F}
+
+/* início */
+.hero{background:var(--grad);color:#fff;position:relative;overflow:hidden;padding-block:clamp(40px,6vw,84px) clamp(70px,9vw,120px)}
+.hero::before{content:"";position:absolute;width:620px;height:620px;right:-160px;top:-220px;border-radius:50%;background:radial-gradient(circle,rgba(242,103,138,.38),transparent 65%)}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(24px,5vw,64px);align-items:center;position:relative}
+.hero .pill{display:inline-block;background:rgba(255,255,255,.16);border-radius:999px;padding:7px 18px;font-family:var(--head);font-weight:700;font-size:.92rem;margin-bottom:22px}
+.hero h1{color:#fff;margin-bottom:22px}
+.hero .lede{color:rgba(255,255,255,.9);margin-bottom:32px}
+.cta{display:flex;flex-wrap:wrap;gap:14px 20px;align-items:center}
+.stage{max-width:430px;width:100%;margin-inline:auto;aspect-ratio:1;border-radius:50%;background:rgba(255,255,255,.14);display:grid;place-items:center;box-shadow:inset 0 0 0 2px rgba(255,255,255,.2)}
+.stage .logo{width:82%}
+@media(max-width:860px){.hero .wrap{grid-template-columns:1fr}.stage{max-width:260px;order:-1}}
+.stats{margin-top:-52px;position:relative;z-index:2}
+.stats .wrap>div.in{display:grid;grid-template-columns:repeat(4,1fr);background:var(--surface);border-radius:22px;box-shadow:0 24px 50px -28px var(--shadow);padding:10px}
+.stats .it{padding:18px 20px;text-align:center}
+.stats .it+.it{border-left:1px solid var(--line)}
+.stats b{display:block;font-family:var(--head);font-size:1.9rem;line-height:1.1;color:var(--sky)}
+.stats .it:nth-child(2) b{color:var(--mint)}.stats .it:nth-child(3) b{color:var(--rose)}
+.stats span{font-size:.92rem;color:var(--ink2);font-weight:600}
+@media(max-width:760px){.stats .wrap>div.in{grid-template-columns:1fr 1fr}.stats .it:nth-child(3){border-left:0}.stats .it:nth-child(n+3){border-top:1px solid var(--line)}}
+.strip-h{padding-block:46px 0;text-align:center}
+.strip-h p{font-family:var(--head);font-weight:700;font-size:1.15rem;color:var(--ink2);max-width:48ch;margin-inline:auto}
+.strip-h+.mqw{margin-top:16px}
+.covers-h{padding-block:clamp(48px,7vw,84px) 30px;text-align:center}
+.covers-h p{margin-top:8px;color:var(--ink2)}
+.covers{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding-bottom:clamp(54px,7vw,90px)}
+.cover{display:flex;flex-direction:column;gap:14px;padding:26px;text-decoration:none;cursor:pointer;transition:transform .25s,box-shadow .25s;border:0;text-align:left;width:100%;color:var(--ink)}
+.cover:hover{transform:translateY(-6px);box-shadow:0 1px 2px var(--shadow),0 28px 40px -24px var(--shadow)}
+.cover h3{font-size:1.3rem}
+.cover p{color:var(--ink2);font-size:1rem;flex:1}
+.cover .go{font-family:var(--head);font-weight:700;color:var(--sky);font-size:.95rem}
+.cover .go::after{content:"  \2192";transition:margin .2s}
+.cover:hover .go::after{margin-left:6px}
+@media(max-width:900px){.covers{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.covers{grid-template-columns:1fr}}
+.about-h{background:var(--surface);padding-block:clamp(48px,7vw,84px)}
+.about-h .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,72px);align-items:center}
+.about-h figure{margin:0}
+.about-h figure img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:22px}
+.about-h blockquote{margin:0 0 22px;font-family:var(--head);font-weight:700;font-size:clamp(1.5rem,2.8vw,2.1rem);line-height:1.3;color:var(--ink)}
+@media(max-width:820px){.about-h .wrap{grid-template-columns:1fr}}
+
+/* clínica */
+.camila{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(28px,5vw,80px);align-items:center}
+.camila figure{margin:0}
+.camila figure img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:22px;background:var(--bg2)}
+.camila figcaption{margin-top:12px}
+.camila figcaption b{display:block;font-family:var(--head);font-size:1.3rem}
+.camila figcaption span{font-size:.92rem;color:var(--ink2)}
+@media(max-width:820px){.camila{grid-template-columns:1fr}}
+.pull{font-family:var(--head);font-weight:700;font-size:clamp(1.4rem,2.6vw,1.9rem);line-height:1.35;color:var(--ink);margin:0}
+.rail{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 0 14px;scrollbar-width:thin}
+.slide{flex:0 0 min(80%,540px);scroll-snap-align:start;margin:0;position:relative;aspect-ratio:4/3;overflow:hidden;border-radius:20px;background:var(--line)}
+.slide img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.slide:hover img{transform:scale(1.05)}
+.slide figcaption{position:absolute;left:14px;bottom:14px;background:var(--surface);color:var(--ink);font-family:var(--head);font-weight:700;padding:5px 14px;border-radius:999px;font-size:.9rem}
+.cnav{display:flex;gap:10px;margin-top:8px}
+.cnav button{width:46px;height:46px;border-radius:50%;border:2px solid var(--line2);background:var(--surface);cursor:pointer;font-size:1.2rem}
+.cnav button:hover{border-color:var(--ink)}
+.nums{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:26px}
+.nums div{background:var(--surface);border-radius:999px;padding:10px 22px;font-size:.95rem;color:var(--ink2);font-weight:600;box-shadow:0 1px 2px var(--shadow)}
+.nums b{font-family:var(--head);font-size:1.5rem;color:var(--rose);margin-right:8px;vertical-align:middle}
+
+/* especialidades */
+.sp-list{display:grid;gap:18px}
+.sp-row{display:grid;grid-template-columns:auto minmax(180px,300px) 1fr auto;gap:clamp(16px,3vw,36px);align-items:center;padding:26px 30px;cursor:pointer;text-align:left;width:100%;border:0;transition:transform .25s,box-shadow .25s;color:var(--ink)}
+.sp-row:hover{transform:translateY(-4px)}
+.sp-row h3{font-size:1.5rem}
+.sp-row p{color:var(--ink2);max-width:52ch}
+.sp-row .ar{width:46px;height:46px;border-radius:50%;background:var(--t-sky);color:var(--sky);display:grid;place-items:center;font-size:1.2rem;transition:.2s}
+.sp-row:hover .ar{background:var(--sky);color:#fff}
+@media(max-width:760px){.sp-row{grid-template-columns:auto 1fr;padding:22px}.sp-row p{grid-column:1/-1}.sp-row .ar{display:none}}
+
+/* convênios */
+.seg{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px}
+.seg button{padding:11px 22px;border-radius:999px;border:2px solid var(--line2);background:var(--surface);font-family:var(--head);font-weight:700;font-size:.97rem;cursor:pointer;color:var(--ink2);transition:.2s}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+html[data-theme="dark"] .seg button[aria-pressed="true"]{background:var(--sky);color:#0C1D31;border-color:var(--sky)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .seg button[aria-pressed="true"]{background:var(--sky);color:#0C1D31;border-color:var(--sky)}}
+.svc{display:grid;gap:12px}
+.row{display:grid;grid-template-columns:44px 1fr;gap:16px;align-items:center;padding:18px 22px;background:var(--surface);border-radius:16px;box-shadow:0 1px 2px var(--shadow);animation:fade .4s both}
+.row .mk{width:44px;height:44px;border-radius:50%;background:var(--t-mint);color:var(--mint);display:grid;place-items:center;font-weight:700}
+.row b{font-family:var(--head);font-size:1.15rem}
+.row small{display:block;color:var(--ink2);font-size:.98rem;line-height:1.5}
+.pnote{margin-top:20px;color:var(--ink2)}
+.pnote a{font-weight:700;color:var(--sky);text-decoration:none}
+
+/* ferramenta */
+.card h3{margin-bottom:6px}
+.ages{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0}
+.ages button{padding:16px 8px;border-radius:16px;border:2px solid var(--line);background:var(--bg);font-family:var(--head);font-weight:700;font-size:1.15rem;cursor:pointer;line-height:1.2;transition:.2s}
+.ages button:hover{background:var(--t-sun);border-color:var(--sun);transform:translateY(-3px)}
+.ages button small{display:block;font-family:var(--body);font-size:.75rem;font-weight:600;opacity:.8}
+.qhead{display:flex;justify-content:space-between;gap:10px;font-weight:700;font-size:.9rem;color:var(--ink2);margin-bottom:8px}
+.pbar{height:8px;border-radius:8px;background:var(--line);overflow:hidden;margin-bottom:22px}
+.pbar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--mint2),var(--rose2));border-radius:8px;transition:width .4s}
+.q{font-family:var(--head);font-weight:700;font-size:1.35rem;line-height:1.3;margin:6px 0 20px}
+.q small{display:block;font-size:.82rem;color:var(--mint);margin-bottom:4px}
+.opts{display:grid;gap:10px}
+.opts button{text-align:left;padding:15px 20px;border-radius:14px;border:2px solid var(--line);background:var(--bg);font-weight:700;cursor:pointer;transition:.15s}
+.opts button:hover{border-color:var(--mint2);background:var(--t-mint)}
+.sm-link{background:none;border:0;color:var(--ink2);font-weight:700;text-decoration:underline;cursor:pointer;margin-top:14px;padding:4px}
+.res{display:grid;gap:12px}
+.res .lvl{padding:16px 18px;border-radius:14px;background:var(--t-mint);font-weight:700}
+.lvl.mid{background:var(--t-sun)}.lvl.hi{background:var(--t-pink)}
+
+/* família */
+.fam{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,6vw,90px);align-items:center}
+@media(max-width:860px){.fam{grid-template-columns:1fr}}
+.phone{max-width:340px;margin-inline:auto;border-radius:34px;padding:20px;box-shadow:0 30px 60px -30px var(--shadow);border:6px solid var(--ink)}
+.phone .hd{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.phone .hd .bd{width:40px;height:40px;border-radius:50%;background:var(--badge);display:grid;place-items:center;box-shadow:0 0 0 2px var(--t-sky)}
+.phone .hd img{width:28px}
+.phone .hd b{font-family:var(--head);line-height:1.15;display:block}.phone .hd small{color:var(--ink2);font-size:.78rem}
+.m-card{background:var(--bg);border-radius:14px;padding:12px 14px;font-size:.9rem;margin-bottom:10px}
+.m-card h5{margin:0 0 6px;font-family:var(--head);font-size:.9rem}
+.m-row{display:flex;justify-content:space-between;gap:10px;font-weight:700;font-size:.82rem;margin:6px 0 3px}
+.bar{height:8px;border-radius:8px;background:var(--line);overflow:hidden}
+.bar i{display:block;height:100%;border-radius:8px;background:var(--mint2);transform-origin:left;animation:fill 2.4s ease-out both}
+.bar.b2 i{background:var(--sky2)}.bar.b3 i{background:var(--rose2)}
+@keyframes fill{from{transform:scaleX(0)}}
+.ex{text-align:center;font-size:.76rem;color:var(--ink2);margin-top:6px}
+
+/* avaliações */
+.rv{overflow:hidden;padding:12px 0 32px}
+.rv .track{display:flex;width:max-content;animation:slide 60s linear infinite}
+.rcard{width:360px;flex:none;padding:24px;margin-right:18px;display:grid;gap:10px;align-content:start}
+.rcard .st{color:#E0A020;letter-spacing:2px}
+.rcard p{font-size:1rem;line-height:1.55;color:var(--ink2)}
+.rcard b{font-family:var(--head);font-size:.95rem}
+.rcard.empty{width:min(620px,86vw)}
+.acts{display:flex;flex-wrap:wrap;gap:14px 20px;align-items:center}
+
+/* formulários */
+form.f{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+form.f .full{grid-column:1/-1}
+label{display:grid;gap:6px;font-weight:700;font-size:.9rem;font-family:var(--head)}
+input,select,textarea{font:inherit;font-family:var(--body);font-weight:500;color:var(--ink);background:var(--surface);border:2px solid var(--line);border-radius:12px;padding:12px 14px;width:100%;min-width:0}
+textarea{resize:vertical;min-height:110px}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--mint2);box-shadow:0 0 0 4px color-mix(in srgb,var(--mint2) 25%,transparent)}
+.ck{display:grid;grid-template-columns:24px 1fr;gap:10px;align-items:start;font-size:.85rem;font-weight:500;color:var(--ink2);font-family:var(--body)}
+.ck input{width:20px;height:20px;margin:2px 0 0;accent-color:var(--mint)}
+.ck a{color:var(--sky);font-weight:700;cursor:pointer;text-decoration:underline}
+.hint{font-size:.82rem;font-weight:600;color:var(--mint);font-family:var(--body)}
+.msg{grid-column:1/-1;background:var(--t-sun);border-radius:12px;padding:10px 14px;font-weight:700;font-size:.92rem;font-family:var(--body)}
+.msg.err{background:var(--t-pink)}
+.done{display:grid;gap:14px;justify-items:start;padding:6px 0}
+.done h3{font-size:1.6rem}
+details{background:var(--surface);border-radius:14px;box-shadow:0 1px 2px var(--shadow);margin-bottom:10px;padding:0 22px}
+summary{cursor:pointer;list-style:none;font-family:var(--head);font-weight:700;font-size:1.05rem;padding:18px 36px 18px 0;position:relative}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:2px;top:50%;transform:translateY(-50%);font-size:1.6rem;color:var(--rose);transition:transform .25s}
+details[open] summary::after{transform:translateY(-50%) rotate(45deg)}
+details p{color:var(--ink2);padding:0 0 20px;max-width:62ch}
+.ask{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,72px);align-items:start}
+@media(max-width:900px){.ask{grid-template-columns:1fr}}
+
+/* contato */
+.addr{font-style:normal;font-size:1.08rem;line-height:1.75;margin:0 0 20px}
+.addr b{font-family:var(--head);font-size:1.35rem}
+.hours{margin:0 0 24px;display:grid;gap:10px;max-width:380px}
+.hours div{display:flex;justify-content:space-between;gap:20px;padding:12px 18px;background:var(--surface);border-radius:12px;font-weight:700;box-shadow:0 1px 2px var(--shadow)}
+.hours span{color:var(--mint)}
+.where{display:grid;grid-template-columns:1fr 360px;gap:clamp(24px,5vw,72px);align-items:start}
+@media(max-width:860px){.where{grid-template-columns:1fr}.vid{order:-1}}
+.vid{position:relative;max-width:360px;width:100%;margin-inline:auto;border-radius:26px;overflow:hidden;aspect-ratio:9/16;background:#0A1B30;box-shadow:0 30px 50px -30px var(--shadow)}
+.vid video{width:100%;height:100%;object-fit:cover}
+.vid button{position:absolute;right:12px;bottom:12px;background:rgba(255,255,255,.94);color:#1D3F66;border:0;border-radius:999px;padding:8px 16px;font-family:var(--head);font-weight:700;cursor:pointer}
+.pics{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:30px}
+.pics img{border-radius:18px;width:100%;aspect-ratio:4/3;object-fit:cover}
+.contacts{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.contacts>div{background:var(--surface);border-radius:18px;padding:26px;display:grid;gap:12px;align-content:start;box-shadow:0 1px 2px var(--shadow)}
+.contacts p{color:var(--ink2);font-size:1rem}
+.contacts .btn{justify-self:start}
+@media(max-width:860px){.contacts{grid-template-columns:1fr}}
+
+/* chamada final e rodapé */
+.cond-band{background:var(--grad);color:#fff;padding-block:clamp(54px,7vw,84px)}
+.cond-band .wrap{display:grid;grid-template-columns:1.3fr .7fr;gap:30px;align-items:center}
+.cond-band h2{color:#fff;margin-bottom:12px;font-size:clamp(1.9rem,3.8vw,2.7rem)}
+.cond-band p{color:rgba(255,255,255,.9);max-width:54ch}
+.cond-band .btn{justify-self:end}
+@media(max-width:860px){.cond-band .wrap{grid-template-columns:1fr}.cond-band .btn{justify-self:start}}
+footer{background:var(--band);color:var(--on-band2);padding-block:56px calc(56px + 70px)}
+footer .wrap{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:34px}
+footer b{color:#fff;display:block;margin-bottom:10px;font-family:var(--head);font-size:1.02rem}
+footer a,footer button.lk{color:#fff;text-underline-offset:3px;background:none;border:0;padding:0;font:inherit;cursor:pointer;text-align:left;text-decoration:underline}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+footer p{font-size:.95rem;line-height:1.6}
+.soc{display:flex;gap:12px;margin-top:16px}
+.soc a{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;color:#fff;text-decoration:none;transition:transform .2s;background:rgba(255,255,255,.14)}
+.soc a:first-child{background:linear-gradient(45deg,#F9A24B,#E8447C 55%,#7B4FD6)}
+.soc a:last-child{background:#1B9A52}
+.soc a:hover{transform:translateY(-4px)}
+.soc svg{width:24px;height:24px}
+.legal{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.16);padding-top:20px;font-size:.85rem}
+.fbd{display:flex;gap:12px;align-items:center;margin-bottom:14px}
+.fbd .bd{width:52px;height:52px;border-radius:50%;background:#fff;display:grid;place-items:center}
+.fbd .bd img{width:36px}
+.fbd b{margin:0;line-height:1.2}
+@media(max-width:900px){footer .wrap{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){footer .wrap{grid-template-columns:1fr}}
+.fab{position:fixed;z-index:65;right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));padding:13px 22px;box-shadow:0 14px 28px -10px rgba(0,0,0,.45)}
+
+/* modais */
+dialog{border:0;padding:0;border-radius:22px;width:min(680px,calc(100vw - 20px));max-height:calc(100dvh - 24px);background:var(--surface);color:var(--ink);overflow:auto;margin:auto;box-shadow:0 40px 80px -30px rgba(0,0,0,.5)}
+dialog::backdrop{background:rgba(10,24,40,.6);backdrop-filter:blur(3px)}
+dialog[open]{animation:fade .3s both}
+.md{padding:clamp(22px,4vw,36px);position:relative}
+.md h2{font-size:1.65rem;margin:0 44px 8px 0;color:var(--mint)}
+.md .sub{color:var(--ink2);margin-bottom:18px;font-size:.98rem}
+.x{position:absolute;right:16px;top:16px;width:40px;height:40px;border-radius:50%;border:0;background:var(--bg2);font-size:1.3rem;cursor:pointer;line-height:1}
+.x:hover{background:var(--t-pink)}
+.steps{display:flex;align-items:center;margin:6px 0 24px}
+.steps i{width:36px;height:36px;border-radius:50%;background:var(--bg2);color:var(--ink2);display:grid;place-items:center;font-weight:700;font-style:normal;flex:none}
+.steps i.on{background:var(--mint);color:#fff;box-shadow:0 0 0 5px var(--t-mint)}
+.steps i.ok{background:var(--mint);color:#fff;font-size:0}
+.steps i.ok::after{content:"\2713";font-size:1rem}
+.steps u{flex:1;height:3px;background:var(--line);margin:0 8px;text-decoration:none;border-radius:3px}
+.steps u.ok{background:var(--mint)}
+.sp{display:none}.sp.on{display:grid;gap:14px;animation:fade .3s both}
+.sp h3{font-size:1.25rem}
+.nav2{display:flex;justify-content:space-between;gap:10px;margin-top:22px;padding-top:16px;border-top:1px solid var(--line)}
+.sum div{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px solid var(--line)}
+.sum span{color:var(--ink2)}.sum b{text-align:right}
+.legaltxt h3{margin:24px 0 6px;font-size:1.15rem}
+.legaltxt p,.legaltxt li{color:var(--ink2);font-size:.97rem}
+.legaltxt ul{margin:6px 0;padding-left:20px;display:grid;gap:4px}
+
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+
+/* ===== v5: cores da logo (aqua, rosa, coral, amarelo, verde, menta); marinho só em texto ===== */
+.lg img{mix-blend-mode:normal!important;background:none!important;padding:0!important;height:46px!important}
+.mqw{background:#fff}
+.lg{color:#16304F}
+body::before{background:var(--surface)}
+.nav a.l::after{background:linear-gradient(90deg,var(--rose2),var(--sun))}
+.brand b{color:var(--ink)}
+.brand small{color:var(--rose)}
+.brand .bd{box-shadow:0 0 0 2px var(--t-pink)}
+.ic.c{background:var(--t-coral);color:#D4572B}.ic.g{background:var(--t-mint);color:var(--mint)}
+.cols3>div{border-top-color:var(--sun)}
+.cols3>div:nth-child(2){border-top-color:var(--rose2)}.cols3>div:nth-child(3){border-top-color:var(--sky2)}
+.dl>div{border-left-color:var(--sun)}
+.dl>div:nth-child(3n+2){border-left-color:var(--rose2)}.dl>div:nth-child(3n){border-left-color:var(--sky2)}
+.steps2 li::before{background:linear-gradient(135deg,var(--rose2),var(--sun))}
+.tags li{background:var(--t-pink)}.tags li:nth-child(3n+2){background:var(--t-sun)}.tags li:nth-child(3n){background:var(--t-sky)}
+.two>h2,.two>h3{border-left-color:var(--sun)}
+.tl,.cover .go,.pnote a{color:var(--rose)}
+.sp-row .ar{background:var(--t-pink);color:var(--rose)}.sp-row:hover .ar{background:var(--rose);color:#fff}
+.seg button[aria-pressed="true"]{background:var(--rose);color:#fff;border-color:var(--rose)}
+html[data-theme="dark"] .seg button[aria-pressed="true"]{background:var(--rose);color:#fff;border-color:var(--rose)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .seg button[aria-pressed="true"]{background:var(--rose);color:#fff;border-color:var(--rose)}}
+.row .mk{background:var(--t-sun);color:#A66A00}
+.md h2{color:var(--rose)}
+.steps i.on,.steps i.ok,.steps u.ok{background:var(--rose)}.steps i.on{box-shadow:0 0 0 5px var(--t-pink)}
+.pbar i{background:linear-gradient(90deg,var(--sun),var(--rose2))}
+input:focus,select:focus,textarea:focus{border-color:var(--rose2);box-shadow:0 0 0 4px color-mix(in srgb,var(--rose2) 25%,transparent)}
+.vid button{color:#16304F}
+:focus-visible{outline-color:var(--rose2)}
+.b-mint{background:var(--sky)}
+
+/* hero em movimento (estrutura da página inicial de referência) */
+.hero5{padding-block:18px 0}
+.hbox{position:relative;border-radius:30px;overflow:hidden;min-height:clamp(500px,76vh,660px);background:#5b4a3c;display:flex;align-items:center;isolation:isolate}
+.hs{position:absolute;inset:0;z-index:-1}
+.hs img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;animation:hs 28s linear infinite}
+.hs img:nth-child(2){animation-delay:7s}.hs img:nth-child(3){animation-delay:14s}.hs img:nth-child(4){animation-delay:21s}
+@keyframes hs{0%{opacity:0;transform:scale(1)}4%{opacity:1}25%{opacity:1}29%{opacity:0;transform:scale(1.09)}100%{opacity:0;transform:scale(1.09)}}
+.hs::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(40,25,15,.35),rgba(40,25,15,0) 60%)}
+.glass{margin:clamp(16px,4vw,52px);max-width:540px;padding:clamp(24px,3.6vw,40px);border-radius:26px;background:color-mix(in srgb,var(--bg) 80%,transparent);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.55);box-shadow:0 30px 60px -30px rgba(0,0,0,.45)}
+.glass .logo{width:104px;margin-bottom:14px}
+.glass h1{font-size:clamp(1.9rem,3.8vw,2.9rem);margin-bottom:14px}
+.glass .lede{font-size:1.08rem;margin-bottom:24px}
+.hdots{position:absolute;right:22px;bottom:20px;display:flex;gap:8px}
+.hdots i{width:9px;height:9px;border-radius:50%;background:rgba(255,255,255,.7)}
+
+/* galeria do espaço */
+.sec-h{text-align:center;margin-bottom:28px}.sec-h p{margin-top:8px;color:var(--ink2)}
+.gal{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:clamp(170px,22vw,270px);gap:14px}
+.gal figure{margin:0;position:relative;overflow:hidden;border-radius:24px;background:var(--bg2)}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.gal figure:hover img{transform:scale(1.05)}
+.gal figcaption{position:absolute;left:14px;bottom:14px;background:var(--surface);color:var(--ink);font-family:var(--head);font-weight:700;padding:5px 14px;border-radius:999px;font-size:.9rem}
+.g-a{grid-column:span 2;grid-row:span 2}.g-b{grid-column:span 4}.g-c,.g-d{grid-column:span 2}
+@media(max-width:720px){.gal{grid-template-columns:1fr 1fr;grid-auto-rows:180px}.g-a{grid-column:span 1;grid-row:span 2}.g-b{grid-column:span 1;grid-row:span 2}.g-c,.g-d{grid-column:span 1}}
+
+/* capas */
+.cover .ic{margin-bottom:2px}
+.cover{border-bottom:5px solid var(--sun)}.cover:nth-child(3n+2){border-bottom-color:var(--rose2)}.cover:nth-child(3n){border-bottom-color:var(--sky2)}
+
+/* cabeçalho de especialidade com foto */
+.sp-hero{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(24px,5vw,64px);align-items:center}
+.sp-hero figure{margin:0}
+.sp-hero img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:26px;box-shadow:0 30px 50px -30px var(--shadow)}
+@media(max-width:820px){.sp-hero{grid-template-columns:1fr}.sp-hero figure{order:-1}}
+.ig{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px}
+.ig>div{background:var(--surface);border-radius:20px;padding:24px;display:grid;gap:10px;align-content:start;box-shadow:0 1px 2px var(--shadow),0 14px 30px -24px var(--shadow)}
+.ig h4{font-size:1.1rem}.ig p{color:var(--ink2);font-size:.97rem;line-height:1.55}
+.ig.wide{grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.ages-line{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.ages-line span{background:var(--surface);border-radius:999px;padding:8px 18px;font-weight:700;font-family:var(--head);box-shadow:0 1px 2px var(--shadow)}
+
+/* jornada do paciente */
+.jr{list-style:none;margin:0 auto;padding:0;max-width:860px;position:relative;display:grid;gap:22px}
+.jr::before{content:"";position:absolute;left:27px;top:20px;bottom:20px;width:3px;border-radius:3px;background:linear-gradient(var(--rose2),var(--sun),var(--sky2))}
+.jr li{display:grid;grid-template-columns:56px 1fr;gap:20px;position:relative}
+.jr .nd{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;font-family:var(--head);font-weight:700;font-size:1.35rem;color:#fff;background:var(--rose);box-shadow:0 0 0 6px var(--bg);z-index:1}
+.jr li:nth-child(6n+2) .nd{background:var(--coral)}.jr li:nth-child(6n+3) .nd{background:#E3A21A}.jr li:nth-child(6n+4) .nd{background:var(--sky)}.jr li:nth-child(6n+5) .nd{background:var(--mint)}.jr li:nth-child(6n+6) .nd{background:var(--green)}
+.jr .bx{background:var(--surface);border-radius:20px;padding:22px 26px;box-shadow:0 1px 2px var(--shadow),0 14px 30px -24px var(--shadow)}
+.jr .bx h3{font-size:1.25rem;margin-bottom:6px}.jr .bx p{color:var(--ink2)}
+.jr .who{display:inline-block;margin-top:10px;font-size:.85rem;font-weight:700;font-family:var(--head);background:var(--t-sun);border-radius:999px;padding:4px 12px;color:var(--ink)}
+.pill-h{display:inline-block;background:var(--surface);border-radius:999px;padding:6px 16px;font-family:var(--head);font-weight:700;font-size:.9rem;color:var(--rose);margin-bottom:16px;box-shadow:0 1px 2px var(--shadow)}
+
+/* convênios */
+.cv-hero{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(24px,5vw,64px);align-items:center}
+.cv-hero h1{margin-bottom:16px}
+.cv-hero figure{margin:0}
+.cv-hero img{width:100%;aspect-ratio:5/4;object-fit:cover;border-radius:30px;box-shadow:0 30px 50px -30px var(--shadow)}
+@media(max-width:820px){.cv-hero{grid-template-columns:1fr}.cv-hero figure{order:-1}}
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}@media(max-width:700px){.plans{grid-template-columns:1fr 1fr}}
+.pl{background:#fff;border-radius:22px;min-height:124px;padding:26px;display:grid;place-items:center;box-shadow:0 1px 2px var(--shadow),0 16px 30px -24px var(--shadow);text-align:center;font-family:var(--head);font-weight:700;font-size:1.2rem;color:#16304F}
+.pl img{max-height:58px;width:auto;max-width:100%}
+.pl small{display:block;font-family:var(--body);font-weight:600;font-size:.85rem;color:#55637A;margin-top:4px}
+.cond-band{background:linear-gradient(120deg,#F2784B 0%,#E24F82 100%)}
+.cond-band .btn{background:#fff;color:#16304F}
+.steps-h{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px;counter-reset:q}
+.steps-h>div{background:var(--surface);border-radius:20px;padding:24px;box-shadow:0 1px 2px var(--shadow);counter-increment:q}
+.steps-h>div::before{content:counter(q);display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--t-pink);color:var(--rose);font-family:var(--head);font-weight:700;margin-bottom:12px}
+.steps-h h4{margin-bottom:6px}.steps-h p{color:var(--ink2);font-size:.97rem}
+.nf{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:center;background:var(--t-sun);border-radius:28px;padding:clamp(24px,4vw,44px)}
+.nf h2{margin-bottom:10px}.nf p{color:var(--ink2)}
+.nf .acts{justify-content:flex-end}
+@media(max-width:820px){.nf{grid-template-columns:1fr}.nf .acts{justify-content:flex-start}}
+
+/* avaliações do Google */
+.rv{overflow:hidden;padding:12px 0 32px}
+.rcard{width:370px;flex:none;padding:26px;margin-right:18px;display:grid;gap:12px;align-content:start;background:var(--surface);border-radius:22px;box-shadow:0 1px 2px var(--shadow),0 16px 30px -24px var(--shadow)}
+.rcard .st{color:#F2A81D;letter-spacing:3px;font-size:1.05rem}
+.rcard p{font-size:1rem;line-height:1.6;color:var(--ink)}
+.rcard .who{display:flex;align-items:center;gap:12px;margin-top:6px}
+.rcard .av{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;font-family:var(--head);font-weight:700;font-size:1.15rem;color:#fff;background:var(--rose);flex:none}
+.rcard .who b{display:block;font-family:var(--head);font-size:1rem;line-height:1.2}
+.rcard .who small{color:var(--ink2);font-size:.85rem}
+.rcard.empty{width:min(640px,88vw)}
+
+/* contato e candidatura */
+.contacts{grid-template-columns:repeat(2,1fr)}
+@media(max-width:700px){.contacts{grid-template-columns:1fr}}
+.filebox{display:grid;gap:6px}
+.filebox input[type=file]{padding:12px;background:var(--bg2);border-style:dashed}
+.filebox small{font-weight:500;color:var(--ink2);font-family:var(--body)}
+.vid{box-shadow:0 30px 50px -30px var(--shadow)}
+footer .soc a:first-child{background:linear-gradient(45deg,#F9A24B,#E24F82 55%,#8E4FD6)}
+.about-h{background:var(--bg2)}
+
+/* hero: apresentação com a foto da Camila */
+.glass .ph{display:flex;align-items:center;gap:16px;margin-bottom:18px}
+.glass .ph img{width:84px;height:84px;border-radius:50%;object-fit:cover;object-position:center;box-shadow:0 0 0 4px #fff,0 0 0 6px var(--rose2);flex:none}
+.glass .ph b{display:block;font-family:var(--head);font-size:1.15rem;line-height:1.2}
+.glass .ph span{font-size:.85rem;color:var(--ink2);line-height:1.4;display:block}
+/* botão do WhatsApp: fixo e estático */
+.fab{position:fixed;transition:none!important;animation:none!important;transform:none!important}
+.fab:hover{transform:none!important;box-shadow:0 14px 28px -10px rgba(0,0,0,.45)}
+
+/* hero v5.2: logo em destaque + fotos enquadradas sem cartão por cima */
+.hbox2{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(20px,4vw,56px);align-items:center;background:linear-gradient(135deg,#FFE9EF 0%,#FFF3D6 55%,#E2F6EC 100%);border-radius:32px;padding:clamp(22px,4vw,52px);overflow:hidden}
+.hl{min-width:0}
+.logo-xl{width:clamp(190px,24vw,290px);margin:0 0 6px -6px}
+.hname{font-family:var(--head);font-weight:700;font-size:1.1rem;color:var(--rose);margin-bottom:14px}
+.hname span{color:var(--ink2);font-weight:600;margin-left:6px}
+.hbox2 h1{font-size:clamp(1.9rem,3.6vw,2.9rem);margin-bottom:14px}
+.hbox2 .lede{margin-bottom:24px}
+.hp{position:relative;aspect-ratio:4/4.6;border-radius:26px;overflow:hidden;background:#d9cbbd;box-shadow:0 30px 50px -28px var(--shadow);isolation:isolate;min-width:0}
+.hs2{position:absolute;inset:0;z-index:-1}
+.hs2 img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;animation:hs 28s linear infinite}
+.hs2 img:nth-child(1){opacity:1}
+.hs2 img:nth-child(2){animation-delay:7s}.hs2 img:nth-child(3){animation-delay:14s}.hs2 img:nth-child(4){animation-delay:21s}
+.ph2{position:absolute;left:14px;bottom:14px;display:flex;align-items:center;gap:12px;background:color-mix(in srgb,var(--surface) 90%,transparent);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-radius:999px;padding:7px 20px 7px 7px;box-shadow:0 8px 20px -10px rgba(0,0,0,.4)}
+.ph2 img{width:52px;height:52px;border-radius:50%;object-fit:cover;flex:none}
+.ph2 b{display:block;font-family:var(--head);font-size:1rem;line-height:1.2}
+.ph2 span{display:block;font-size:.78rem;color:var(--ink2);line-height:1.3}
+@media(max-width:860px){.hbox2{grid-template-columns:1fr}.hp{aspect-ratio:4/3.4}.logo-xl{width:190px}}
+
+.hp{aspect-ratio:1/1.02}
+@keyframes hs5{0%{opacity:0;transform:scale(1)}3.5%{opacity:1}20%{opacity:1}24%{opacity:0;transform:scale(1.08)}100%{opacity:0;transform:scale(1.08)}}
+.hs2 img{animation:hs5 35s linear infinite}
+.hs2 img:nth-child(1){animation-delay:0s}.hs2 img:nth-child(2){animation-delay:7s}.hs2 img:nth-child(3){animation-delay:14s}.hs2 img:nth-child(4){animation-delay:21s}.hs2 img:nth-child(5){animation-delay:28s}
+@media(max-width:860px){.hp{aspect-ratio:4/3.4}}
+</style>
+
+<div id="pagetop"></div>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio" data-go="inicio" aria-label="Clínica Cajeow, página inicial">
+      <span class="bd"><img src="img/simbolo.png" alt="" width="30" height="27"></span>
+      <span><b>Clínica Cajeow</b><small>Desenvolvimento Humano</small></span>
+    </a>
+    <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav"><i></i></button>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a class="l" href="#clinica" data-go="clinica">A clínica</a>
+      <a class="l" href="#especialidades" data-go="especialidades">Especialidades</a>
+      <a class="l" href="#jornada" data-go="jornada">Jornada do paciente</a>
+      <a class="l" href="#convenios" data-go="convenios">Convênios</a>
+      <a class="l" href="#contato" data-go="contato">Contato</a>
+      <button class="btn b-pink sm" data-open="agendar" type="button">Agendar</button>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- INÍCIO -->
+<div class="view on" data-view="inicio">
+  <section class="hero5"><div class="wrap">
+    <div class="hbox2">
+      <div class="hl">
+        <div class="logo logo-xl" role="img" aria-label="Logomarca da Clínica Cajeow"><img class="base" src="img/simbolo-base.png" alt="" width="555" height="495"><img class="p p-sorriso" src="img/p-sorriso.png" alt=""><img class="p p-arco" src="img/p-arco.png" alt=""><img class="p p-tulipa" src="img/p-tulipa.png" alt=""><img class="p p-flor-e" src="img/p-flor-e.png" alt=""><img class="p p-flor-d" src="img/p-flor-d.png" alt=""></div>
+        <p class="hname">Clínica Cajeow <span>Desenvolvimento Humano</span></p>
+        <h1>Onde cada história encontra um solo fértil para crescer e se desenvolver.</h1>
+        <p class="lede">Psicologia, Fonoaudiologia e Avaliação Neuropsicológica para crianças, adolescentes e adultos, em Vila Yara, Osasco.</p>
+        <div class="cta">
+          <button class="btn b-pink" data-open="agendar" type="button">Agendar atendimento</button>
+          <a class="btn b-ghost" data-wa="Olá! Vim pelo site da Clínica Cajeow e gostaria de conversar com a equipe." href="https://wa.me/5511992588029" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp</a>
+        </div>
+      </div>
+      <div class="hp" aria-label="Imagens da clínica">
+        <div class="hs2" aria-hidden="true">
+          <img src="img/sala-infantil.jpg" alt="" style="object-position:58% 50%">
+          <img src="img/recepcao.jpg" alt="" style="object-position:50% 62%">
+          <img src="img/sala-sofa.jpg" alt="" style="object-position:50% 40%">
+          <img src="img/consultorio-adulto.jpg" alt="" style="object-position:50% 55%">
+          <img src="img/consultorio-ludico.jpg" alt="" style="object-position:50% 45%">
+        </div>
+        <div class="ph2"><img src="img/camila-rosto.jpg" alt="" width="52" height="52"><div><b>Camila Gomes</b><span>Responsável técnica · CRP 06/147376</span></div></div>
+      </div>
+    </div>
+  </div></section>
+
+  <div class="strip-h wrap"><p>Atendemos pelos planos Amil e Hapvida NotreDame Intermédica, e também de forma particular, com reembolso.</p></div>
+  <div class="mqw" aria-label="Convênios atendidos"><div class="track" data-mq>
+    <div class="lg"><img src="img/conv-amil-t.png" alt="Amil"></div>
+    <div class="lg"><img src="img/conv-hapvida-t.png" alt="Hapvida"></div>
+    <div class="lg"><img src="img/conv-notredame-t.png" alt="NotreDame Intermédica"></div>
+    <div class="lg">Particular</div>
+    <div class="lg">Reembolso</div>
+  </div></div>
+
+  <div class="wrap">
+    <div class="covers-h"><h2>Conheça a Cajeow</h2><p>Escolha um tema para ver o conteúdo completo.</p></div>
+    <div class="covers">
+      <a class="cover" href="#clinica" data-go="clinica"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-home"/></svg></span><h3>A clínica</h3><p>Nossa essência, quem está à frente, os pilares e o espaço.</p><span class="go">Abrir</span></a>
+      <a class="cover" href="#especialidades" data-go="especialidades"><span class="ic p"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-heart"/></svg></span><h3>Especialidades</h3><p>Psicologia, Fonoaudiologia e Avaliação Neuropsicológica, em detalhe.</p><span class="go">Abrir</span></a>
+      <a class="cover" href="#jornada" data-go="jornada"><span class="ic c"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-route"/></svg></span><h3>Jornada do paciente</h3><p>Do primeiro contato ao acompanhamento, etapa por etapa.</p><span class="go">Abrir</span></a>
+      <a class="cover" href="#marcos" data-go="marcos"><span class="ic g"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-check"/></svg></span><h3>Guia de desenvolvimento infantil</h3><p>Roteiro gratuito de observação baseado em protocolos técnicos, com resumo em PDF.</p><span class="go">Abrir</span></a>
+      <a class="cover" href="#convenios" data-go="convenios"><span class="ic s"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-card"/></svg></span><h3>Convênios</h3><p>Planos atendidos, atendimento particular e reembolso.</p><span class="go">Abrir</span></a>
+      <a class="cover" href="#avaliacoes" data-go="avaliacoes"><span class="ic s"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-star"/></svg></span><h3>Avaliações das famílias</h3><p>O que as famílias dizem no Google.</p><span class="go">Abrir</span></a>
+      <a class="cover" href="#duvidas" data-go="duvidas"><span class="ic p"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-help"/></svg></span><h3>Dúvidas</h3><p>Perguntas frequentes e um espaço para contar a sua situação.</p><span class="go">Abrir</span></a>
+      <a class="cover" href="#contato" data-go="contato"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-pin"/></svg></span><h3>Onde estamos</h3><p>Endereço, horários, mapa e visita à clínica.</p><span class="go">Abrir</span></a>
+    </div>
+  </div>
+
+  <section class="blk wh"><div class="wrap">
+    <div class="sec-h"><h2>Conheça o espaço</h2><p>Ambientes pensados para receber cada paciente e a sua família.</p></div>
+    <div class="gal">
+      <figure class="g-a"><img src="img/recepcao.jpg" alt="Recepção da clínica, com balcão e poltronas" loading="lazy" style="object-position:50% 60%"><figcaption>Recepção</figcaption></figure>
+      <figure class="g-b"><img src="img/sala-infantil.jpg" alt="Consultório infantil, com mesas, brinquedos e janelas amplas" loading="lazy" style="object-position:50% 55%"><figcaption>Consultório infantil</figcaption></figure>
+      <figure class="g-c"><img src="img/consultorio-ludico.jpg" alt="Sala com estante de jogos, brinquedos e lousa" loading="lazy" style="object-position:50% 50%"><figcaption>Sala lúdica</figcaption></figure>
+      <figure class="g-d"><img src="img/sala-sofa.jpg" alt="Sala de atendimento com estantes de jogos, sofá e vista da cidade" loading="lazy" style="object-position:50% 40%"><figcaption>Sala de atendimento</figcaption></figure>
+    </div>
+  </div></section>
+
+  <section class="about-h"><div class="wrap">
+    <figure><img src="img/camila.jpg" alt="Camila Gomes, psicóloga infantojuvenil e responsável técnica" style="object-position:center 25%"></figure>
+    <div>
+      <blockquote>Ser um solo fértil é oferecer acolhimento, conhecimento, segurança e cuidado para que cada pessoa cresça à sua maneira.</blockquote>
+      <p class="muted" style="margin-bottom:22px">Camila Gomes, psicóloga infantojuvenil e responsável técnica da clínica (CRP 06/147376).</p>
+      <div class="cta"><button class="btn b-pink" data-go="clinica" type="button">Conhecer a clínica</button></div>
+    </div>
+  </div></section>
+</div>
+
+<!-- A CLÍNICA -->
+<div class="view" data-view="clinica">
+  <section class="page-h"><div class="wrap">
+    <h1>A clínica</h1>
+    <p class="lede">A Clínica Cajeow Desenvolvimento Humano promove o cuidado interdisciplinar, ético e singular, valorizando cada pessoa em sua totalidade e fortalecendo suas potencialidades.</p>
+  </div></section>
+
+  <section class="blk"><div class="wrap two">
+    <h2>Nossa essência</h2>
+    <div class="prose">
+      <p class="pull">Onde cada história encontra um solo fértil para crescer e se desenvolver.</p>
+      <p>Essa é a essência do nosso cuidado: acolher com humanização, escutar com sensibilidade e respeitar a singularidade e a diversidade. Com atuação baseada em evidências, fortalecemos o potencial de cada pessoa.</p>
+      <p>O público da clínica sempre foi o infantil, sem deixar de atender adolescentes e adultos. Cada pessoa tem a sua história, as suas necessidades, as suas dificuldades e o seu próprio tempo de desenvolvimento, e é por isso que o nosso trabalho começa pela escuta.</p>
+    </div>
+  </div></section>
+
+  <section class="blk alt"><div class="wrap camila">
+    <figure>
+      <img src="img/camila.jpg" alt="Camila Gomes, psicóloga infantojuvenil e responsável técnica da clínica" style="object-position:center 25%">
+      <figcaption><b>Camila Gomes</b><span>Psicóloga infantojuvenil · Responsável técnica · CRP 06/147376</span></figcaption>
+    </figure>
+    <div>
+      <h2 style="margin-bottom:18px">Quem está à frente</h2>
+      <div class="prose">
+        <p>Camila Gomes é psicóloga infantojuvenil e responde tecnicamente pela clínica, com registro no Conselho Regional de Psicologia. Ela conduz a equipe sob os mesmos princípios que orientam todos os atendimentos: acolher, respeitar a individualidade e trabalhar com ética e responsabilidade.</p>
+        <p>A responsabilidade técnica formalizada em Psicologia é a base de um cuidado seguro, com governança clínica clara e processos registrados.</p>
+      </div>
+    </div>
+  </div></section>
+
+  <section class="blk"><div class="wrap two">
+    <h2>Nossos pilares</h2>
+    <dl class="dl">
+      <div><dt>Acolhimento</dt><dd>Um ambiente seguro, humano e respeitoso, em que o paciente e a família se sentem ouvidos desde o primeiro contato.</dd></div>
+      <div><dt>Individualidade</dt><dd>Enxergamos a pessoa para além do diagnóstico, com planos construídos a partir da história e do ritmo de cada um.</dd></div>
+      <div><dt>Ética e responsabilidade</dt><dd>Cuidado técnico dentro das competências de cada profissão, com sigilo, registro e atuação baseada em evidências.</dd></div>
+      <div><dt>Integração</dt><dd>As especialidades trabalham de forma integrada, e a família é parte ativa do processo terapêutico.</dd></div>
+      <div><dt>Evolução</dt><dd>Buscamos autonomia, funcionalidade e qualidade de vida, com a evolução acompanhada e reavaliada periodicamente.</dd></div>
+    </dl>
+  </div></section>
+
+  <section class="blk alt"><div class="wrap two">
+    <h2>Compromisso técnico</h2>
+    <div>
+      <p class="prose" style="margin-bottom:22px">O acompanhamento não é um atendimento pontual, e sim um percurso terapêutico com início, método e critérios de reavaliação definidos.</p>
+      <dl class="dl">
+        <div><dt>Avaliação inicial estruturada</dt><dd>Cada caso começa por uma compreensão organizada da história, das queixas e das necessidades do paciente.</dd></div>
+        <div><dt>Plano terapêutico individualizado</dt><dd>Metas definidas com o paciente e a família, de acordo com a demanda de cada um.</dd></div>
+        <div><dt>Reavaliações clínicas periódicas</dt><dd>A evolução é revista de tempos em tempos, e a frequência e as intervenções são ajustadas quando necessário.</dd></div>
+        <div><dt>Instrumentos padronizados</dt><dd>Uso de instrumentos de avaliação padronizados para acompanhar a evolução de forma objetiva.</dd></div>
+        <div><dt>Registro e prontuário</dt><dd>Prontuário e registros de evolução garantem rastreabilidade do cuidado prestado a cada paciente.</dd></div>
+      </dl>
+    </div>
+  </div></section>
+
+  <section class="blk"><div class="wrap">
+    <div class="sec-h"><h2>Conheça o espaço</h2><p>Recepção, área de espera, sala infantil e consultórios.</p></div>
+    <div class="gal">
+      <figure class="g-a"><img src="img/recepcao.jpg" alt="Recepção da clínica, com balcão e poltronas" loading="lazy" style="object-position:50% 60%"><figcaption>Recepção</figcaption></figure>
+      <figure class="g-b"><img src="img/sala-infantil.jpg" alt="Consultório infantil, com mesas, brinquedos e janelas amplas" loading="lazy" style="object-position:50% 55%"><figcaption>Consultório infantil</figcaption></figure>
+      <figure class="g-c"><img src="img/consultorio-ludico.jpg" alt="Sala com estante de jogos, brinquedos e lousa" loading="lazy" style="object-position:50% 50%"><figcaption>Sala lúdica</figcaption></figure>
+      <figure class="g-d"><img src="img/sala-sofa.jpg" alt="Sala de atendimento com estantes de jogos, sofá e vista da cidade" loading="lazy" style="object-position:50% 40%"><figcaption>Sala de atendimento</figcaption></figure>
+    </div>
+  </div></section>
+</div>
+
+<!-- ESPECIALIDADES -->
+<div class="view" data-view="especialidades">
+  <section class="page-h"><div class="wrap">
+    <h1>Especialidades</h1>
+    <p class="lede">Cuidado interdisciplinar, com cada profissional atuando na sua área e com autonomia técnica. Escolha uma especialidade para conhecer em detalhe como funciona.</p>
+  </div></section>
+  <section class="blk"><div class="wrap sp-list">
+    <button class="sp-row" type="button" data-go="psicologia"><span class="ic p"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-heart"/></svg></span><h3>Psicologia e Psicoterapia</h3><p>Escuta qualificada e intervenção para questões emocionais, comportamentais e de desenvolvimento, para crianças, adolescentes e adultos.</p><span class="ar" aria-hidden="true">&rarr;</span></button>
+    <button class="sp-row" type="button" data-go="fonoaudiologia"><span class="ic g"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-chat"/></svg></span><h3>Fonoaudiologia</h3><p>Cuidado com a comunicação: linguagem oral e escrita, fala e interação, em uma sala exclusiva para esses atendimentos.</p><span class="ar" aria-hidden="true">&rarr;</span></button>
+    <button class="sp-row" type="button" data-go="neuropsicologia"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-brain"/></svg></span><h3>Avaliação Neuropsicológica</h3><p>Investigação de atenção, memória, linguagem, raciocínio e outras funções, para todas as faixas etárias, com instrumentos padronizados e relatório com devolutiva.</p><span class="ar" aria-hidden="true">&rarr;</span></button>
+  </div></section>
+  <section class="blk alt"><div class="wrap two">
+    <h2>Quem atendemos</h2>
+    <div class="ig wide">
+      <div><span class="ic s"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-smile"/></svg></span><h4>Crianças</h4><p>O foco histórico da clínica. Sala infantil com jogos, livros e recursos lúdicos, e participação da família no processo.</p></div>
+      <div><span class="ic p"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-compass"/></svg></span><h4>Adolescentes</h4><p>Um espaço de escuta respeitosa para uma fase de muitas mudanças, com diálogo com a família quando necessário.</p></div>
+      <div><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-users"/></svg></span><h4>Adultos</h4><p>Psicologia, Fonoaudiologia e Avaliação Neuropsicológica para quem busca compreender e cuidar do próprio funcionamento.</p></div>
+    </div>
+  </div></section>
+  <section class="blk"><div class="wrap two">
+    <h2>Demandas que acompanhamos</h2>
+    <div>
+      <div class="cols3">
+        <div><h3>Desenvolvimento e comunicação</h3><ul><li>Atrasos de linguagem</li><li>Dificuldades de comunicação</li><li>Atenção e hiperatividade (TDAH)</li><li>Apoio ao neurodesenvolvimento</li></ul></div>
+        <div><h3>Aprendizagem e cognição</h3><ul><li>Dificuldades escolares</li><li>Atenção e memória</li><li>Leitura e escrita</li><li>Funções executivas</li></ul></div>
+        <div><h3>Emocional e comportamental</h3><ul><li>Ansiedade</li><li>Depressão</li><li>Autoestima</li><li>Comportamento</li><li>Luto e mudanças de vida</li></ul></div>
+      </div>
+      <p class="warn" style="margin-top:28px">Esta lista mostra o tipo de demanda que acompanhamos e não substitui uma avaliação. O diagnóstico é feito por profissional habilitado, depois de avaliação adequada. Não é preciso ter diagnóstico para começar.</p>
+    </div>
+  </div></section>
+</div>
+
+<!-- PSICOLOGIA -->
+<div class="view" data-view="psicologia">
+  <section class="page-h"><div class="wrap sp-hero">
+    <div>
+      <button class="back" type="button" data-go="especialidades">Especialidades</button>
+      <h1>Psicologia e Psicoterapia</h1>
+      <p class="lede">Psicoterapia para crianças, adolescentes e adultos, conduzida por psicólogos com registro no CRP, com atuação baseada em evidências e participação da família no processo.</p>
+      <div class="cta" style="margin-top:28px"><button class="btn b-pink" data-open="agendar" data-esp="Psicologia" type="button">Agendar Psicologia</button></div>
+    </div>
+    <figure><img src="img/consultorio-ludico.jpg" alt="Sala lúdica da clínica, com estante de jogos, brinquedos e lousa" style="object-position:center 45%"></figure>
+  </div></section>
+  <section class="blk"><div class="wrap two"><h2>Definição</h2><div class="prose">
+    <p>A psicoterapia é um processo estruturado de escuta e intervenção para compreender e lidar com questões emocionais, comportamentais e de desenvolvimento. O foco está em fortalecer recursos da pessoa, ampliar a sua autonomia e melhorar a sua qualidade de vida.</p>
+    <p>Na Cajeow, não se trata de um atendimento pontual: é um percurso com início, método e critérios de reavaliação definidos, registrado em prontuário e conduzido sob responsabilidade técnica em Psicologia.</p>
+  </div></div></section>
+  <section class="blk alt"><div class="wrap two"><h2>Para quem</h2><div class="ig wide">
+    <div><span class="ic s"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-smile"/></svg></span><h4>Crianças</h4><p>O atendimento usa jogos, livros, desenhos e brincadeiras, que são a forma natural de a criança se expressar. Os responsáveis recebem orientações para apoiar o desenvolvimento no dia a dia.</p></div>
+    <div><span class="ic p"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-compass"/></svg></span><h4>Adolescentes</h4><p>Um espaço de escuta respeitoso e sigiloso, dentro dos limites éticos da profissão, com diálogo com a família quando isso ajuda o processo.</p></div>
+    <div><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-users"/></svg></span><h4>Adultos</h4><p>Acompanhamento de questões emocionais, relacionais e de rotina, com objetivos definidos junto com o paciente.</p></div>
+  </div></div></section>
+  <section class="blk"><div class="wrap two"><h2>Quando procurar</h2><div>
+    <div class="ig">
+      <div><span class="ic p"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-heart"/></svg></span><h4>Ansiedade e medos</h4><p>Preocupação excessiva, medo, tensão ou dificuldade de relaxar.</p></div>
+      <div><span class="ic s"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-leaf"/></svg></span><h4>Tristeza e desânimo</h4><p>Tristeza persistente, perda de interesse ou de energia.</p></div>
+      <div><span class="ic c"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-target"/></svg></span><h4>Comportamento</h4><p>Dificuldades de regulação emocional, irritabilidade e limites.</p></div>
+      <div><span class="ic g"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-users"/></svg></span><h4>Relações e socialização</h4><p>Dificuldades para fazer amigos, conviver e se expressar.</p></div>
+      <div><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-compass"/></svg></span><h4>Mudanças e perdas</h4><p>Luto, separação, troca de escola e outras transições.</p></div>
+      <div><span class="ic p"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-book"/></svg></span><h4>Vida escolar</h4><p>Dificuldades escolares com componente emocional.</p></div>
+    </div>
+    <p class="warn" style="margin-top:24px">Não é necessário ter diagnóstico ou encaminhamento para a primeira conversa.</p>
+  </div></div></section>
+  <section class="blk alt"><div class="wrap two"><h2>Como trabalhamos</h2><ol class="steps2">
+    <li><div><b>Acolhimento e anamnese</b><span>Escuta da história, das queixas e do contexto do paciente e da família.</span></div></li>
+    <li><div><b>Avaliação inicial estruturada</b><span>Organização das informações para compreender o ponto de partida e as necessidades de cada caso.</span></div></li>
+    <li><div><b>Plano terapêutico individualizado</b><span>Objetivos e metas definidos com o paciente e a família.</span></div></li>
+    <li><div><b>Sessões regulares</b><span>Atendimento com registro de evolução em prontuário e acompanhamento de frequência.</span></div></li>
+    <li><div><b>Reavaliações periódicas</b><span>Revisão das metas, com ajuste da frequência e das estratégias, usando instrumentos padronizados quando indicado.</span></div></li>
+    <li><div><b>Devolutivas e encaminhamentos</b><span>Retorno periódico à família sobre os marcos atingidos e encaminhamento a outros profissionais quando necessário.</span></div></li>
+  </ol></div></section>
+  <section class="blk"><div class="wrap two"><h2>A família no processo</h2><div class="ig wide">
+    <div><span class="ic s"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-target"/></svg></span><h4>Metas compartilhadas</h4><p>A família é integrada ao plano terapêutico desde o início, com metas compartilhadas e reavaliadas.</p></div>
+    <div><span class="ic g"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-home"/></svg></span><h4>Orientação aos cuidadores</h4><p>Estratégias terapêuticas que podem ser replicadas em casa, para que o ganho se sustente fora da clínica.</p></div>
+    <div><span class="ic p"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-chat"/></svg></span><h4>Comunicação de evolução</h4><p>Retornos periódicos sobre o andamento do acompanhamento.</p></div>
+    <div><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-shield"/></svg></span><h4>Ética e sigilo</h4><p>O atendimento segue o Código de Ética Profissional do Psicólogo, incluindo o sigilo profissional.</p></div>
+  </div></div></section>
+  <section class="blk alt"><div class="wrap two"><h2>Perguntas frequentes</h2><div>
+    <details><summary>Preciso de laudo ou encaminhamento para começar?</summary><p>Não para a primeira conversa. A equipe entende a demanda e indica o melhor caminho. Se já houver laudos ou relatórios anteriores, eles ajudam e podem ser trazidos.</p></details>
+    <details><summary>Quanto tempo dura o acompanhamento?</summary><p>Depende de cada pessoa. O plano é revisto periodicamente, e a frequência é ajustada conforme a evolução do paciente e o engajamento da família.</p></details>
+    <details><summary>Os pais participam das sessões infantis?</summary><p>A família participa do processo por meio de orientações, metas compartilhadas e devolutivas. O formato de cada encontro é definido pelo profissional, de acordo com a idade e as necessidades da criança.</p></details>
+    <details><summary>A clínica atende adultos e adolescentes?</summary><p>Sim. O público histórico é o infantil, mas atendemos adolescentes e adultos.</p></details>
+  </div></div></section>
+</div>
+
+<!-- FONOAUDIOLOGIA -->
+<div class="view" data-view="fonoaudiologia">
+  <section class="page-h"><div class="wrap sp-hero">
+    <div>
+      <button class="back" type="button" data-go="especialidades">Especialidades</button>
+      <h1>Fonoaudiologia</h1>
+      <p class="lede">Cuidado com a comunicação humana: linguagem oral e escrita, fala e interação. Os atendimentos acontecem em uma sala exclusiva de Fonoaudiologia, com recursos adequados para cada idade.</p>
+      <div class="cta" style="margin-top:28px"><button class="btn b-pink" data-open="agendar" data-esp="Fonoaudiologia" type="button">Agendar Fonoaudiologia</button></div>
+    </div>
+    <figure><img src="img/sala-sofa.jpg" alt="Sala de atendimento com estantes de jogos, sofá e vista da cidade" style="object-position:center 45%"></figure>
+  </div></section>
+  <section class="blk"><div class="wrap two"><h2>Definição</h2><div class="prose">
+    <p>A Fonoaudiologia avalia e acompanha o desenvolvimento e as dificuldades da comunicação. Comunicar-se envolve entender o que os outros dizem, expressar ideias, produzir os sons da fala e, mais tarde, ler e escrever.</p>
+    <p>O trabalho é individualizado: parte de uma avaliação cuidadosa, define objetivos próprios para cada paciente e envolve a família, que recebe orientações para estimular a comunicação em casa.</p>
+  </div></div></section>
+  <section class="blk alt"><div class="wrap two"><h2>Áreas de atuação</h2><div class="ig">
+    <div><span class="ic p"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-chat"/></svg></span><h4>Linguagem oral</h4><p>Compreensão e expressão: vocabulário, frases, narrativa e uso da linguagem na conversa.</p></div>
+    <div><span class="ic s"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-wave"/></svg></span><h4>Fala e articulação</h4><p>Produção dos sons da fala, trocas ou omissões de sons e inteligibilidade, isto é, o quanto os outros entendem o que a pessoa diz.</p></div>
+    <div><span class="ic g"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-users"/></svg></span><h4>Comunicação e interação</h4><p>Intenção comunicativa, gestos, contato visual e brincadeira compartilhada.</p></div>
+    <div><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-pencil"/></svg></span><h4>Linguagem escrita</h4><p>Apoio às dificuldades de leitura e de escrita, em articulação com a escola quando necessário.</p></div>
+  </div></div></section>
+  <section class="blk"><div class="wrap two"><h2>Sinais que merecem atenção</h2><div class="ig">
+    <div><span class="ic s"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-ear"/></svg></span><h4>Primeiros anos</h4><p>Pouca vocalização ou poucas palavras para a idade, pouca resposta quando é chamado pelo nome, dificuldade em entender pedidos simples.</p></div>
+    <div><span class="ic p"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-smile"/></svg></span><h4>Pré-escola</h4><p>Fala difícil de ser entendida por pessoas de fora da família, trocas frequentes de sons, frases curtas ou desorganizadas.</p></div>
+    <div><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-book"/></svg></span><h4>Idade escolar</h4><p>Dificuldades na leitura e na escrita, troca de letras, dificuldade de compreender e contar histórias.</p></div>
+    <div><span class="ic g"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-users"/></svg></span><h4>Adolescentes e adultos</h4><p>Dificuldades persistentes de comunicação, de fala ou de linguagem que atrapalham os estudos, o trabalho ou a vida social.</p></div>
+  </div></div></section>
+  <section class="blk alt"><div class="wrap two"><h2>Como trabalhamos</h2><ol class="steps2">
+    <li><div><b>Entrevista com a família</b><span>Histórico do desenvolvimento, queixas, rotina e expectativas.</span></div></li>
+    <li><div><b>Avaliação fonoaudiológica</b><span>Observação da comunicação do paciente, com atividades lúdicas no caso das crianças.</span></div></li>
+    <li><div><b>Plano de intervenção</b><span>Objetivos definidos a partir das necessidades de cada pessoa.</span></div></li>
+    <li><div><b>Sessões</b><span>Atendimento na sala exclusiva de Fonoaudiologia, com registro de evolução.</span></div></li>
+    <li><div><b>Orientação à família</b><span>Estratégias para estimular a comunicação em casa e no dia a dia.</span></div></li>
+    <li><div><b>Reavaliação e encaminhamentos</b><span>Revisão periódica das metas e, quando necessário, encaminhamento a outros profissionais.</span></div></li>
+  </ol></div></section>
+  <section class="blk"><div class="wrap two"><h2>Perguntas frequentes</h2><div>
+    <details><summary>Meu filho fala pouco. Devo esperar ele "destravar"?</summary><p>Cada criança tem o seu ritmo, mas esperar sem avaliar pode atrasar o apoio. Se você tem dúvidas, uma avaliação fonoaudiológica ajuda a saber se é variação normal do desenvolvimento ou se vale iniciar o acompanhamento.</p></details>
+    <details><summary>A Fonoaudiologia atende adultos?</summary><p>Sim. A clínica atende crianças, adolescentes e adultos, com objetivos definidos a partir da avaliação de cada pessoa.</p></details>
+    <details><summary>A família precisa acompanhar as sessões?</summary><p>A família participa do processo, com orientações e devolutivas. O formato de cada sessão é definido pela fonoaudióloga, conforme a idade e o objetivo.</p></details>
+  </div></div></section>
+</div>
+
+<!-- NEUROPSICOLOGIA -->
+<div class="view" data-view="neuropsicologia">
+  <section class="page-h"><div class="wrap sp-hero">
+    <div>
+      <button class="back" type="button" data-go="especialidades">Especialidades</button>
+      <h1>Avaliação Neuropsicológica</h1>
+      <p class="lede">Investigação do funcionamento cognitivo, comportamental e emocional por meio de entrevistas, observação e instrumentos padronizados, com relatório escrito e devolutiva. Atendemos todas as faixas etárias.</p>
+      <div class="cta" style="margin-top:28px"><button class="btn b-pink" data-open="agendar" data-esp="Avaliação neuropsicológica" type="button">Agendar avaliação</button></div>
+    </div>
+    <figure><img src="img/consultorio-adulto.jpg" alt="Consultório de atendimento com poltrona, mesa e janela com vista da cidade" style="object-position:center 55%"></figure>
+  </div></section>
+  <section class="blk"><div class="wrap two"><h2>Definição</h2><div class="prose">
+    <p>A avaliação neuropsicológica é um processo estruturado que estuda como a pessoa pensa, aprende, lembra, presta atenção e lida com as emoções. Ela identifica pontos fortes e dificuldades e orienta os próximos passos.</p>
+    <p>Não é um tratamento, e sim uma investigação. Seus resultados contribuem para a compreensão de um quadro, mas o diagnóstico é construído em conjunto com outros profissionais, como médicos e demais especialistas que acompanham o paciente.</p>
+    <div class="ages-line"><span>Crianças</span><span>Adolescentes</span><span>Adultos</span><span>Idosos</span></div>
+    <p>A avaliação atende o público de todas as faixas etárias, com instrumentos e atividades adequados a cada idade.</p>
+  </div></div></section>
+  <section class="blk alt"><div class="wrap two"><h2>Funções investigadas</h2><div class="ig">
+    <div><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-eye"/></svg></span><h4>Atenção</h4><p>Capacidade de manter o foco, de selecionar o que é importante e de alternar entre tarefas.</p></div>
+    <div><span class="ic p"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-bulb"/></svg></span><h4>Memória</h4><p>Aprender, guardar e recuperar informações, verbais e visuais.</p></div>
+    <div><span class="ic g"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-chat"/></svg></span><h4>Linguagem</h4><p>Compreensão e expressão, vocabulário e organização do discurso.</p></div>
+    <div><span class="ic s"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-puzzle"/></svg></span><h4>Raciocínio</h4><p>Resolução de problemas, planejamento e flexibilidade de pensamento.</p></div>
+    <div><span class="ic c"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-target"/></svg></span><h4>Funções executivas</h4><p>Organização, controle de impulsos e capacidade de planejar e concluir tarefas.</p></div>
+    <div><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-book"/></svg></span><h4>Aprendizagem</h4><p>Habilidades de leitura, escrita e matemática e o modo como a pessoa aprende.</p></div>
+    <div><span class="ic p"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-heart"/></svg></span><h4>Humor e comportamento</h4><p>Aspectos emocionais e comportamentais que influenciam o desempenho no dia a dia.</p></div>
+  </div></div></section>
+  <section class="blk"><div class="wrap two"><h2>Quando procurar</h2><div>
+    <ul class="tags"><li>Dificuldades de atenção, concentração ou organização</li><li>Dificuldades escolares persistentes</li><li>Investigação de TDAH e de outras queixas cognitivas, em conjunto com a equipe de saúde</li><li>Queixas de memória em adultos e idosos</li><li>Acompanhamento de funções cognitivas ao longo do tempo</li><li>Orientação para escola e família a partir do perfil cognitivo</li></ul>
+  </div></div></section>
+  <section class="blk alt"><div class="wrap two"><h2>Como é o processo</h2><ol class="steps2">
+    <li><div><b>Entrevista inicial</b><span>Conversa detalhada sobre a história de desenvolvimento, a queixa, a saúde e a rotina escolar ou profissional.</span></div></li>
+    <li><div><b>Coleta de informações complementares</b><span>Relatórios anteriores, informações da escola e de outros profissionais, quando necessário.</span></div></li>
+    <li><div><b>Sessões de avaliação</b><span>Aplicação de testes e atividades padronizados, escolhidos de acordo com o objetivo da avaliação.</span></div></li>
+    <li><div><b>Correção e análise</b><span>Integração dos resultados com a história e a observação do paciente.</span></div></li>
+    <li><div><b>Relatório escrito</b><span>Documento com os resultados, a interpretação e as recomendações.</span></div></li>
+    <li><div><b>Devolutiva</b><span>Encontro para explicar os resultados com clareza, orientar a família e a escola e indicar encaminhamentos.</span></div></li>
+  </ol></div></section>
+  <section class="blk"><div class="wrap two"><h2>Como se preparar</h2><ul class="plain">
+    <li>Leve relatórios, laudos e avaliações anteriores, se houver.</li>
+    <li>Leve boletins ou relatórios da escola, no caso de crianças e adolescentes.</li>
+    <li>Informe os medicamentos em uso e outros acompanhamentos de saúde.</li>
+    <li>Procure garantir uma boa noite de sono e uma alimentação leve antes das sessões.</li>
+    <li>Quem usa óculos ou aparelho auditivo deve levá-los.</li>
+  </ul></div></section>
+  <section class="blk alt"><div class="wrap two"><h2>Perguntas frequentes</h2><div>
+    <details><summary>Para quais idades a avaliação é indicada?</summary><p>Para todas as faixas etárias: crianças, adolescentes, adultos e idosos. Os instrumentos e as atividades são escolhidos de acordo com a idade e o objetivo da avaliação.</p></details>
+    <details><summary>A avaliação neuropsicológica dá um diagnóstico?</summary><p>Ela traz dados importantes para a compreensão do quadro, mas o diagnóstico é feito em conjunto com outros profissionais de saúde, a partir de todas as informações reunidas.</p></details>
+    <details><summary>Meu filho vai ser "testado"? Isso causa ansiedade?</summary><p>As atividades são apresentadas de forma adequada à idade, e o profissional cuida do vínculo e do ritmo da criança. A avaliação não é uma prova de "aprovado ou reprovado".</p></details>
+    <details><summary>O que acontece depois do relatório?</summary><p>Na devolutiva, explicamos os resultados e as recomendações. Quando indicado, orientamos o encaminhamento para acompanhamento psicológico, fonoaudiológico, médico ou escolar.</p></details>
+  </div></div></section>
+</div>
+
+<!-- JORNADA DO PACIENTE -->
+<div class="view" data-view="jornada">
+  <section class="page-h"><div class="wrap">
+    <span class="pill-h">Jornada do paciente</span>
+    <h1>Do primeiro contato ao acompanhamento</h1>
+    <p class="lede">Conheça o caminho do paciente na Cajeow: seis etapas, com responsabilidades claras e a família presente em cada uma delas.</p>
+  </div></section>
+  <section class="blk"><div class="wrap">
+    <ol class="jr">
+      <li><span class="nd">1</span><div class="bx"><h3>Primeiro contato</h3><p>Você fala com a nossa equipe pelo WhatsApp ou pelo site. Explicamos as especialidades, as formas de atendimento e os próximos passos.</p><span class="who">Participam: família e equipe de acolhimento</span></div></li>
+      <li><span class="nd">2</span><div class="bx"><h3>Agendamento</h3><p>Escolhemos juntos o profissional, o dia e o horário, de acordo com a demanda e com a forma de atendimento: particular, reembolso ou convênio.</p><span class="who">Participam: família e equipe de agendamento</span></div></li>
+      <li><span class="nd">3</span><div class="bx"><h3>Acolhimento e anamnese</h3><p>Na primeira conversa, o profissional escuta a história, as queixas e o contexto do paciente e da família.</p><span class="who">Participam: paciente, família e profissional</span></div></li>
+      <li><span class="nd">4</span><div class="bx"><h3>Avaliação inicial e objetivos</h3><p>A partir da avaliação inicial, definimos os objetivos terapêuticos e o plano individualizado, com a participação da família.</p><span class="who">Participam: profissional, paciente e família</span></div></li>
+      <li><span class="nd">5</span><div class="bx"><h3>Acompanhamento</h3><p>Sessões com registro de evolução em prontuário e controle de frequência, com orientações para dar continuidade ao cuidado em casa.</p><span class="who">Participam: profissional e família</span></div></li>
+      <li><span class="nd">6</span><div class="bx"><h3>Reavaliação e devolutivas</h3><p>Revisão periódica das metas, retornos à família, ajuste da frequência e das intervenções e encaminhamentos quando necessário. Quando o caso pede, os profissionais conversam entre si.</p><span class="who">Participam: equipe multiprofissional e família</span></div></li>
+    </ol>
+  </div></section>
+  <section class="blk alt"><div class="wrap two"><h2>Parceria família e clínica</h2><div class="ig wide">
+    <div><span class="ic s"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-target"/></svg></span><h4>Corresponsabilização estruturada</h4><p>Família integrada ao plano terapêutico desde a admissão, com metas compartilhadas e reavaliadas.</p></div>
+    <div><span class="ic g"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-home"/></svg></span><h4>Orientação e capacitação</h4><p>Cuidadores orientados a replicar estratégias terapêuticas no ambiente doméstico.</p></div>
+    <div><span class="ic p"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-leaf"/></svg></span><h4>Generalização no cotidiano</h4><p>O ganho terapêutico se sustenta fora da clínica, fortalecendo a autonomia do paciente.</p></div>
+    <div><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-chat"/></svg></span><h4>Comunicação de evolução</h4><p>Retorno periódico à família sobre os marcos atingidos ao longo do acompanhamento.</p></div>
+  </div></div></section>
+  <section class="blk"><div class="wrap"><div class="acts"><button class="btn b-pink" data-open="agendar" type="button">Agendar atendimento</button></div></div></section>
+</div>
+
+<!-- CONVÊNIOS -->
+<div class="view" data-view="convenios">
+  <section class="page-h"><div class="wrap cv-hero">
+    <div>
+      <h1>Atendemos também por planos de saúde</h1>
+      <p class="lede">Além do atendimento particular, com possibilidade de reembolso, a Cajeow atende pelos planos Amil e Hapvida NotreDame Intermédica. Veja abaixo como funciona cada forma de atendimento.</p>
+      <div class="cta" style="margin-top:26px"><button class="btn b-pink" data-open="agendar" type="button">Solicitar agendamento</button></div>
+    </div>
+    <figure><img src="img/sala-infantil.jpg" alt="Consultório infantil da clínica" style="object-position:center 55%"></figure>
+  </div></section>
+
+  <section class="blk"><div class="wrap">
+    <div class="sec-h"><h2>Atualmente, atendemos pelos seguintes planos de saúde</h2></div>
+    <div class="plans">
+      <div class="pl"><img src="img/conv-amil-t.png" alt="Amil"></div>
+      <div class="pl"><img src="img/conv-hapvida-t.png" alt="Hapvida"></div>
+      <div class="pl"><img src="img/conv-notredame-t.png" alt="NotreDame Intermédica"></div>
+      <div class="pl"><div>Particular<small>atendimento direto</small></div></div>
+      <div class="pl"><div>Reembolso<small>conforme o seu contrato</small></div></div>
+    </div>
+  </div></section>
+
+  <section class="blk alt"><div class="wrap two"><h2>Especialidades por modalidade de atendimento</h2><div>
+    <div class="seg" role="group" aria-label="Forma de atendimento">
+      <button type="button" data-plan="hapvida" aria-pressed="false">Hapvida NotreDame Intermédica</button>
+      <button type="button" data-plan="amil" aria-pressed="false">Amil</button>
+      <button type="button" data-plan="part" aria-pressed="true">Particular e reembolso</button>
+    </div>
+    <div class="svc" id="svc" aria-live="polite"></div>
+    <p class="pnote" id="pnote"></p>
+  </div></div></section>
+
+  <section class="blk"><div class="wrap">
+    <div class="sec-h"><h2>Como funciona a adesão</h2><p>Etapas gerais. A equipe confirma as regras específicas de cada plano.</p></div>
+    <div class="steps-h">
+      <div><h4>Fale com a equipe</h4><p>Informe o plano, a especialidade e quem será atendido, pelo site ou pelo WhatsApp.</p></div>
+      <div><h4>Conferência de cobertura</h4><p>A equipe confirma a cobertura do seu plano e os documentos necessários, como pedido médico, quando exigido.</p></div>
+      <div><h4>Agendamento</h4><p>Escolhemos o profissional, o dia e o horário de atendimento.</p></div>
+      <div><h4>Início do acompanhamento</h4><p>Primeiro atendimento, com acolhimento e definição dos objetivos.</p></div>
+    </div>
+  </div></section>
+
+  <section class="blk alt"><div class="wrap">
+    <div class="nf">
+      <div><h2>Não encontrou o seu plano?</h2><p>A clínica também atende de forma particular, com possibilidade de reembolso junto ao seu plano, conforme as regras do seu contrato. Fale com a nossa equipe para saber como podemos atender a sua família.</p></div>
+      <div class="acts"><a class="btn b-wa" data-wa="Olá! Não encontrei o meu plano na lista e gostaria de saber como atender na Clínica Cajeow." href="https://wa.me/5511992588029" target="_blank" rel="noopener">Falar com a equipe</a></div>
+    </div>
+  </div></section>
+
+  <section class="cond-band">
+    <div class="wrap">
+      <div>
+        <h2>Conheça as nossas condições</h2>
+        <p>Atendimento particular, com possibilidade de reembolso, e pelos planos Amil e Hapvida NotreDame Intermédica. Conte o que você procura e a equipe explica como funciona para o seu caso.</p>
+      </div>
+      <a class="btn b-sun" data-wa="Olá! Vim pelo site da Clínica Cajeow e gostaria de conhecer as condições de atendimento." href="https://wa.me/5511992588029" target="_blank" rel="noopener">Quero conhecer as condições</a>
+    </div>
+  </section>
+</div>
+
+<!-- MARCOS -->
+<div class="view" data-view="marcos">
+  <section class="page-h"><div class="wrap">
+    <h1>Guia de desenvolvimento infantil</h1>
+    <p class="lede">Responda 10 perguntas gerais sobre o dia a dia da criança e receba um resumo de observação em PDF. As perguntas se baseiam nos marcos do CDC/Academia Americana de Pediatria (2022), na tradução da Sociedade Brasileira de Pediatria e na Caderneta da Criança do Ministério da Saúde.</p>
+    <p class="warn" style="max-width:62ch">Esta ferramenta é educativa e de observação. Não é triagem, avaliação, anamnese nem diagnóstico, e não substitui instrumentos padronizados e validados (como ASQ-3 ou Denver II), aplicados por profissionais, nem a avaliação de um médico.</p>
+  </div></section>
+  <section class="blk"><div class="wrap" style="max-width:760px"><div class="card" id="ck" aria-live="polite"></div></div></section>
+</div>
+
+<!-- AVALIAÇÕES -->
+<div class="view" data-view="avaliacoes">
+  <section class="page-h"><div class="wrap">
+    <h1>O que as famílias dizem</h1>
+    <p class="lede">Avaliações de quem já foi atendido, publicadas no Google. Você também pode contar como foi a sua experiência.</p>
+  </div></section>
+  <section class="blk"><div class="rv"><div class="track" id="revtrack"></div></div>
+    <div class="wrap"><div class="acts" style="margin-top:20px">
+      <a class="btn b-pink" data-google href="https://www.google.com/search?q=Cl%C3%ADnica+Cajeow+Osasco" target="_blank" rel="noopener">Deixar meu depoimento no Google</a>
+    </div></div>
+  </section>
+</div>
+
+<!-- DÚVIDAS -->
+<div class="view" data-view="duvidas">
+  <section class="page-h"><div class="wrap">
+    <h1>Dúvidas</h1>
+    <p class="lede">Conte a sua situação e a sua dúvida. Nossa equipe lê com atenção e entra em contato com você.</p>
+  </div></section>
+  <section class="blk"><div class="wrap ask">
+    <div>
+      <h2 style="margin-bottom:20px">Perguntas frequentes</h2>
+      <details><summary>Preciso ter um diagnóstico para começar?</summary><p>Não. Na primeira conversa entendemos a demanda e indicamos a especialidade mais adequada. Alguns planos de saúde podem pedir encaminhamento médico, então vale confirmar com a nossa equipe.</p></details>
+      <details><summary>Quais convênios vocês atendem?</summary><p>Amil e Hapvida NotreDame Intermédica. Também atendemos como particular, com possibilidade de reembolso. Veja as especialidades de cada forma de atendimento na página de Convênios.</p></details>
+      <details><summary>Como funciona o reembolso?</summary><p>No atendimento particular, você pode solicitar o reembolso ao seu plano conforme as regras do seu contrato. Fale com a nossa equipe para saber os documentos que podemos fornecer.</p></details>
+      <details><summary>A família participa do atendimento?</summary><p>Sim. Nos atendimentos infantis, a família é parte ativa do processo, com orientações, metas compartilhadas e retornos periódicos sobre a evolução.</p></details>
+      <details><summary>Tem estacionamento e acessibilidade?</summary><p>Sim. A clínica fica no Pátio Osasco Open Mall, na Torre Santorini, e conta com estacionamento e acessibilidade.</p></details>
+      <details><summary>Qual é o horário de atendimento?</summary><p>De segunda a sexta, das 8h às 19h, e aos sábados, das 8h às 12h30.</p></details>
+    </div>
+    <div class="card">
+      <h3>Conte a sua situação</h3>
+      <p class="muted" style="margin-bottom:16px">Leva cerca de dois minutos.</p>
+      <form class="f" id="f-duvida" novalidate>
+        <label class="full" for="d-sit">O que descreve melhor a sua situação?
+          <select id="d-sit" required><option value="">Selecione</option><option>Quero entender qual especialidade procurar</option><option>Dificuldades de atenção ou de aprendizagem</option><option>Dificuldades na escola</option><option>Atraso ou dificuldade na fala</option><option>Questões emocionais ou de comportamento</option><option>Já tenho laudo ou relatório</option><option>Dúvidas sobre convênio e reembolso</option><option>Outra situação</option></select></label>
+        <label for="d-quem">Quem precisa de atendimento?
+          <select id="d-quem" required><option value="">Selecione</option><option>Meu filho ou minha filha</option><option>Eu mesmo(a)</option><option>Outra pessoa da família</option></select></label>
+        <label for="d-idade">Idade da pessoa<input id="d-idade" inputmode="numeric" maxlength="3" placeholder="Ex.: 5"></label>
+        <label for="d-diag">Já existe diagnóstico ou relatório?
+          <select id="d-diag"><option value="">Selecione</option><option>Sim</option><option>Não</option><option>Está em investigação</option></select></label>
+        <label for="d-ant">Já fez acompanhamento antes?
+          <select id="d-ant"><option value="">Selecione</option><option>Sim</option><option>Não</option></select></label>
+        <label class="full" for="d-txt">Qual é a sua dúvida?
+          <textarea id="d-txt" maxlength="600" placeholder="Conte com as suas palavras. Não precisa de detalhes de saúde, a equipe conversa com você depois."></textarea></label>
+        <label for="d-nome">Seu nome<input id="d-nome" autocomplete="name" required></label>
+        <label for="d-tel">WhatsApp com DDD<input id="d-tel" type="tel" inputmode="tel" autocomplete="tel" placeholder="(11) 90000-0000" required></label>
+        <label for="d-como">Prefere ser contatado por
+          <select id="d-como"><option>WhatsApp</option><option>Ligação</option></select></label>
+        <label for="d-turno">Melhor período
+          <select id="d-turno"><option value="">Sem preferência</option><option>Manhã</option><option>Tarde</option><option>Início da noite</option></select></label>
+        <label class="ck full"><input type="checkbox" id="d-ok"><span>Autorizo a Clínica Cajeow a entrar em contato comigo para responder a esta dúvida, conforme a <a data-open="privacidade">Política de Privacidade</a>.</span></label>
+        <p class="msg err" id="d-msg" hidden></p>
+        <button class="btn b-pink full" type="submit">Enviar minha dúvida</button>
+      </form>
+      <div class="done" id="d-done" hidden></div>
+    </div>
+  </div></section>
+</div>
+
+<!-- CONTATO -->
+<div class="view" data-view="contato">
+  <section class="page-h"><div class="wrap">
+    <h1>Onde estamos</h1>
+    <p class="lede">Vila Yara, Osasco, com acesso pelas avenidas dos Autonomistas e Franz Voegeli e pelas Marginais.</p>
+  </div></section>
+  <section class="blk"><div class="wrap where">
+    <div>
+      <address class="addr"><b>Pátio Osasco Open Mall</b><br>Avenida dos Autonomistas, 896<br>Torre Santorini, salas 1103 e 1903<br>Vila Yara, Osasco/SP · CEP 06020-010</address>
+      <div class="hours"><div>Segunda a sexta<span>8h às 19h</span></div><div>Sábado<span>8h às 12h30</span></div></div>
+      <p class="muted" style="margin-bottom:24px">Estacionamento e acessibilidade.</p>
+      <div class="cta">
+        <a class="btn b-pink" href="https://www.google.com/maps/search/?api=1&query=Av.+dos+Autonomistas,+896+-+Vila+Yara,+Osasco+-+SP,+06020-010" target="_blank" rel="noopener">Abrir no mapa</a>
+        <a class="tl" data-wa="Olá! Gostaria de saber como chegar à Clínica Cajeow." href="https://wa.me/5511992588029" target="_blank" rel="noopener">Pedir orientação de chegada</a>
+      </div>
+    </div>
+    <div class="vid" aria-label="Zoom do planeta até Osasco, em São Paulo">
+      <video id="zoom" muted playsinline preload="auto" poster="img/zoom-mapa-poster.jpg"><source src="img/zoom-mapa.mp4" type="video/mp4"></video>
+      <button type="button" id="replay">Rever zoom</button>
+    </div>
+  </div></section>
+  <section class="blk alt"><div class="wrap contacts">
+    <div><h3>Agende uma visita</h3><p>Conheça a recepção, as salas e a equipe antes de começar.</p><button class="btn b-ghost" data-open="visita" type="button">Agendar visita</button></div>
+    <div><h3>Trabalhe conosco</h3><p>Profissional de saúde que quer fazer parte da equipe? Envie o seu contato e o seu currículo.</p><button class="btn b-ghost" data-open="trabalhe" type="button">Enviar candidatura</button></div>
+  </div></section>
+</div>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <div class="fbd"><span class="bd"><img src="img/simbolo.png" alt=""></span><b>Clínica Cajeow<br>Desenvolvimento Humano</b></div>
+      <p>Onde cada história encontra um solo fértil para crescer e se desenvolver.</p>
+      <div class="soc">
+        <a href="https://www.instagram.com/clinicacajeow/" target="_blank" rel="noopener" aria-label="Instagram da Clínica Cajeow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.500" cy="6.500" r="1" fill="currentColor" stroke="none"/></svg></a>
+        <a data-wa="Olá! Vim pelo site da Clínica Cajeow." href="https://wa.me/5511992588029" target="_blank" rel="noopener" aria-label="WhatsApp da Clínica Cajeow"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-wa"/></svg></a>
+      </div>
+    </div>
+    <div>
+      <b>Endereço e horários</b>
+      <p>Av. dos Autonomistas, 896<br>Torre Santorini, salas 1103 e 1903<br>Vila Yara, Osasco/SP<br><br>Seg a sex, 8h às 19h<br>Sáb, 8h às 12h30</p>
+    </div>
+    <div>
+      <b>Fale conosco</b>
+      <ul>
+        <li>Telefone/WhatsApp: <a data-wa="Olá! Vim pelo site da Clínica Cajeow e gostaria de falar com a equipe." href="https://wa.me/5511992588029" target="_blank" rel="noopener">(11) 99258-8029</a></li>
+        <li>Instagram: <a href="https://www.instagram.com/clinicacajeow/" target="_blank" rel="noopener">@clinicacajeow</a></li>
+        <li><button class="lk" data-open="agendar" type="button">Agendar atendimento</button></li>
+        <li><button class="lk" data-open="trabalhe" type="button">Trabalhe conosco</button></li>
+      </ul>
+    </div>
+    <div>
+      <b>Responsabilidade técnica</b>
+      <p>Camila Gomes<br>CRP 06/147376<br>Registro da clínica: CRP 16684/J</p>
+      <ul style="margin-top:12px"><li><button class="lk" data-open="privacidade" type="button">Política de Privacidade</button></li><li><button class="lk" data-open="termos" type="button">Termos de uso</button></li></ul>
+    </div>
+    <p class="legal">Clínica Cajeow Desenvolvimento Humano. As informações deste site têm caráter informativo e não substituem avaliação ou atendimento profissional.</p>
+  </div>
+</footer>
+
+<a class="btn b-wa fab" data-wa="Olá! Vim pelo site da Clínica Cajeow e gostaria de agendar um atendimento." href="https://wa.me/5511992588029" target="_blank" rel="noopener" aria-label="Agendar pelo WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-wa"/></svg>Agendar</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><symbol id="i-wa" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.600 15.100L2 22l5-1.300A10 10 0 1 0 12 2Zm0 18.200a8.200 8.200 0 0 1-4.200-1.200l-.3-.2-3 .8.8-2.900-.2-.3A8.200 8.200 0 1 1 12 20.200Zm4.500-6.100c-.2-.1-1.500-.7-1.700-.8-.2-.1-.4-.1-.6.100l-.8 1c-.1.200-.3.200-.5.100a6.700 6.700 0 0 1-3.300-2.900c-.2-.4.200-.4.700-1.300.1-.2 0-.3 0-.5l-.8-1.800c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.300 3 3 0 0 0-.9 2.200c0 1.300.9 2.500 1 2.700.1.200 1.800 2.800 4.400 3.900 1.600.7 2.200.7 3 .6.500-.1 1.500-.6 1.700-1.200.2-.6.2-1.100.2-1.200-.1-.2-.3-.2-.5-.3Z"/></symbol><symbol id="ic-home" viewBox="0 0 24 24"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></symbol>
+<symbol id="ic-heart" viewBox="0 0 24 24"><path d="M12 20s-7-4.500-7-10a4 4 0 0 1 7-2.400A4 4 0 0 1 19 10c0 5.500-7 10-7 10z"/></symbol>
+<symbol id="ic-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9h8M8 12h5"/></symbol>
+<symbol id="ic-brain" viewBox="0 0 24 24"><path d="M9 4a3 3 0 0 0-3 3 3 3 0 0 0-2 5 3 3 0 0 0 2 5 3 3 0 0 0 6 1V4a3 3 0 0 0-3 0z"/><path d="M15 4a3 3 0 0 1 3 3 3 3 0 0 1 2 5 3 3 0 0 1-2 5 3 3 0 0 1-6 1"/></symbol>
+<symbol id="ic-route" viewBox="0 0 24 24"><circle cx="6" cy="18" r="2"/><circle cx="18" cy="6" r="2"/><path d="M8 18h6a3 3 0 0 0 0-6h-4a3 3 0 0 1 0-6h6"/></symbol>
+<symbol id="ic-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.500 2.700-6 6-6s6 2.500 6 6"/><circle cx="17" cy="9" r="2.500"/><path d="M16 14c3 0 5 2 5 5"/></symbol>
+<symbol id="ic-check" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 12l3 3 5-6"/></symbol>
+<symbol id="ic-card" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10h18M7 15h4"/></symbol>
+<symbol id="ic-star" viewBox="0 0 24 24"><path d="M12 3l2.700 5.600 6.100.8-4.500 4.200 1.100 6.100L12 16.800 6.600 19.700l1.100-6.100L3.200 9.400l6.100-.8z"/></symbol>
+<symbol id="ic-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.500 9.500a2.500 2.500 0 1 1 3.500 2.300c-.7.400-1 .9-1 1.700M12 17h.01"/></symbol>
+<symbol id="ic-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.500"/></symbol>
+<symbol id="ic-smile" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8.500 14c1 1.500 2.200 2.200 3.500 2.200s2.500-.7 3.500-2.200M9 9.500h.01M15 9.500h.01"/></symbol>
+<symbol id="ic-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></symbol>
+<symbol id="ic-bulb" viewBox="0 0 24 24"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.500 10.900c.6.500 1 1.200 1 2.100h5c0-.9.400-1.600 1-2.100A6 6 0 0 0 12 3z"/></symbol>
+<symbol id="ic-book" viewBox="0 0 24 24"><path d="M5 4h13v16H7a2 2 0 0 1-2-2z"/><path d="M9 8h6M9 12h6"/></symbol>
+<symbol id="ic-wave" viewBox="0 0 24 24"><path d="M3 12h2M7 8v8M11 4v16M15 8v8M19 10v4M21 12h0"/></symbol>
+<symbol id="ic-pencil" viewBox="0 0 24 24"><path d="M4 20l1-4L16 5l3 3L8 19z"/><path d="M14 7l3 3"/></symbol>
+<symbol id="ic-ear" viewBox="0 0 24 24"><path d="M7 9a5 5 0 0 1 10 0c0 3-3 3.500-3 6.500a2.500 2.500 0 0 1-5 0"/><path d="M10 9a2 2 0 0 1 4 0"/></symbol>
+<symbol id="ic-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.500-3.500 8-8 9-4.500-1-8-4.500-8-9V6z"/><path d="M9 12l2 2 4-4"/></symbol>
+<symbol id="ic-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M15.500 8.500l-2 5-5 2 2-5z"/></symbol>
+<symbol id="ic-leaf" viewBox="0 0 24 24"><path d="M5 19c0-8 5-13 14-14 0 9-5 14-13 14"/><path d="M5 19c3-4 6-7 10-9"/></symbol>
+<symbol id="ic-puzzle" viewBox="0 0 24 24"><path d="M6 8h4V6a2 2 0 1 1 4 0v2h4v4h-2a2 2 0 1 0 0 4h2v4H6z"/></symbol>
+<symbol id="ic-eye" viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+</defs></svg>
+
+<!-- Agendamento em etapas -->
+<dialog id="m-agendar" aria-labelledby="ag-t"><div class="md">
+  <button class="x" type="button" data-close aria-label="Fechar">×</button>
+  <h2 id="ag-t">Solicitar agendamento</h2>
+  <p class="sub">Quatro passos rápidos. No final, a mensagem vai pronta para o WhatsApp da clínica.</p>
+  <div class="steps" id="ag-steps"><i>1</i><u></u><i>2</i><u></u><i>3</i><u></u><i>4</i></div>
+  <div class="sp on" data-s="1">
+    <h3>Dados do paciente</h3>
+    <label for="a-pac">Nome completo<input id="a-pac" autocomplete="off" required></label>
+    <label for="a-nasc">Data de nascimento<input id="a-nasc" type="date"></label>
+  </div>
+  <div class="sp" data-s="2">
+    <h3>Dados do responsável</h3>
+    <label for="a-resp">Nome completo<input id="a-resp" autocomplete="name" required></label>
+    <label for="a-tel">Telefone / WhatsApp<input id="a-tel" type="tel" inputmode="tel" autocomplete="tel" placeholder="(11) 90000-0000" required></label>
+    <label for="a-mail">E-mail (opcional)<input id="a-mail" type="email" autocomplete="email"></label>
+  </div>
+  <div class="sp" data-s="3">
+    <h3>Preferências de agendamento</h3>
+    <label for="a-forma">Forma de atendimento
+      <select id="a-forma" required><option value="">Selecione</option><option>Particular</option><option>Reembolso</option><option>Amil</option><option>Hapvida NotreDame Intermédica</option></select></label>
+    <label for="a-esp">Especialidade
+      <select id="a-esp" required></select></label>
+    <label for="a-data">Data preferida (opcional)<input id="a-data" type="date"></label>
+    <label for="a-turno">Horário preferido
+      <select id="a-turno"><option value="">Sem preferência</option><option>Manhã</option><option>Tarde</option><option>Início da noite</option></select>
+      <small class="hint" id="a-hint">Atendemos de segunda a sexta, das 8h às 19h, e aos sábados, das 8h às 12h30.</small></label>
+    <label for="a-obs">Observações<textarea id="a-obs" maxlength="400" placeholder="Conte um pouco sobre o que procura (sem detalhes de saúde, se preferir)."></textarea></label>
+  </div>
+  <div class="sp" data-s="4">
+    <h3>Confirme os dados antes de enviar</h3>
+    <div class="sum" id="a-sum"></div>
+    <label class="ck"><input type="checkbox" id="a-ok"><span>Autorizo a Clínica Cajeow a entrar em contato comigo para confirmar o agendamento, conforme a <a data-open="privacidade">Política de Privacidade</a>.</span></label>
+  </div>
+  <p class="msg err" id="a-msg" hidden></p>
+  <div class="nav2"><button class="btn b-ghost sm" type="button" id="a-back">Voltar</button><button class="btn b-pink sm" type="button" id="a-next">Próximo</button></div>
+  <div class="done" id="a-done" hidden></div>
+</div></dialog>
+
+<dialog id="m-visita" aria-labelledby="v-t"><div class="md">
+  <button class="x" type="button" data-close aria-label="Fechar">×</button>
+  <h2 id="v-t">Agendar uma visita</h2>
+  <p class="sub">Venha conhecer o espaço e a equipe. Combinamos o dia e o horário com você.</p>
+  <form class="f" id="f-visita" novalidate>
+    <label for="v-nome">Seu nome<input id="v-nome" autocomplete="name" required></label>
+    <label for="v-tel">WhatsApp com DDD<input id="v-tel" type="tel" inputmode="tel" required placeholder="(11) 90000-0000"></label>
+    <label for="v-data">Dia preferido<input id="v-data" type="date"></label>
+    <label for="v-turno">Período<select id="v-turno"><option value="">Sem preferência</option><option>Manhã</option><option>Tarde</option><option>Início da noite</option></select></label>
+    <label class="full" for="v-obs">Quer contar algo antes da visita?<textarea id="v-obs" maxlength="300"></textarea></label>
+    <label class="ck full"><input type="checkbox" id="v-ok"><span>Autorizo o contato da Clínica Cajeow, conforme a <a data-open="privacidade">Política de Privacidade</a>.</span></label>
+    <p class="msg err" id="v-msg" hidden></p>
+    <button class="btn b-mint full" type="submit">Enviar pedido de visita</button>
+  </form>
+  <div class="done" id="v-done" hidden></div>
+</div></dialog>
+
+<dialog id="m-depoimento" aria-labelledby="dp-t"><div class="md">
+  <button class="x" type="button" data-close aria-label="Fechar">×</button>
+  <h2 id="dp-t">Deixe o seu depoimento</h2>
+  <p class="sub">Contar como foi a sua experiência nos ajuda a melhorar. Cada depoimento é lido pela equipe antes de qualquer publicação, e só é publicado com a sua autorização.</p>
+  <form class="f" id="f-dep" novalidate>
+    <label for="dp-nome">Seu nome (pode ser só o primeiro nome)<input id="dp-nome" required></label>
+    <label for="dp-tel">WhatsApp com DDD<input id="dp-tel" type="tel" inputmode="tel" required placeholder="(11) 90000-0000"></label>
+    <label class="full" for="dp-txt">Seu depoimento<textarea id="dp-txt" maxlength="500" required></textarea></label>
+    <label class="ck full"><input type="checkbox" id="dp-pub"><span>Autorizo a clínica a publicar este depoimento no site, depois de revisado, com o nome que informei.</span></label>
+    <label class="ck full"><input type="checkbox" id="dp-ok"><span>Concordo com o tratamento dos meus dados, conforme a <a data-open="privacidade">Política de Privacidade</a>.</span></label>
+    <p class="msg err" id="dp-msg" hidden></p>
+    <button class="btn b-pink full" type="submit">Enviar depoimento</button>
+  </form>
+  <div class="done" id="dp-done" hidden></div>
+</div></dialog>
+
+<dialog id="m-trabalhe" aria-labelledby="tr-t"><div class="md">
+  <button class="x" type="button" data-close aria-label="Fechar">×</button>
+  <h2 id="tr-t">Trabalhe conosco</h2>
+  <p class="sub">Você é profissional de saúde e quer fazer parte da equipe? Conte um pouco sobre você e anexe o seu currículo.</p>
+  <form class="f" id="f-trab" novalidate>
+    <label for="tr-nome">Nome completo<input id="tr-nome" autocomplete="name" required></label>
+    <label for="tr-tel">WhatsApp com DDD<input id="tr-tel" type="tel" inputmode="tel" required placeholder="(11) 90000-0000"></label>
+    <label for="tr-area">Área de atuação
+      <select id="tr-area" required><option value="">Selecione</option><option>Psicologia</option><option>Fonoaudiologia</option><option>Neuropsicologia</option><option>Recepção e atendimento</option><option>Outra área</option></select></label>
+    <label for="tr-reg">Registro no conselho (se houver)<input id="tr-reg" placeholder="Ex.: CRP 06/000000"></label>
+    <label class="full" for="tr-obs">Conte sobre a sua experiência<textarea id="tr-obs" maxlength="500"></textarea></label>
+    <div class="full filebox"><label for="tr-file">Currículo (PDF, DOC ou DOCX, até 5 MB)</label><input id="tr-file" type="file" accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"><small id="tr-fname">Nenhum arquivo selecionado.</small></div>
+    <label class="ck full"><input type="checkbox" id="tr-ok"><span>Autorizo o uso destes dados para fins de seleção, conforme a <a data-open="privacidade">Política de Privacidade</a>.</span></label>
+    <p class="msg err" id="tr-msg" hidden></p>
+    <button class="btn b-sky full" type="submit">Enviar candidatura</button>
+  </form>
+  <div class="done" id="tr-done" hidden></div>
+</div></dialog>
+
+<dialog id="m-privacidade" aria-labelledby="pr-t"><div class="md legaltxt">
+  <button class="x" type="button" data-close aria-label="Fechar">×</button>
+  <h2 id="pr-t">Política de Privacidade</h2>
+  <p class="sub">Esta política explica como a Clínica Cajeow Desenvolvimento Humano trata os dados pessoais de quem usa este site, em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018).</p>
+  <h3>1. Quem somos e como falar conosco</h3>
+  <p>A Clínica Cajeow Desenvolvimento Humano, em Vila Yara, Osasco/SP, é a responsável pelo tratamento dos dados coletados neste site. Para dúvidas sobre privacidade ou para exercer seus direitos, fale com a equipe pelo WhatsApp (11) 99258-8029.</p>
+  <h3>2. Dados que coletamos</h3>
+  <ul><li>Dados que você informa nos formulários: nome, telefone ou WhatsApp, e-mail, data de nascimento e idade do paciente, especialidade e forma de atendimento de interesse, e o texto que você escrever.</li><li>Respostas do guia de desenvolvimento infantil, quando você escolhe preenchê-lo e gerar o resumo.</li><li>Informações do dispositivo e de navegação, que o seu navegador envia ao acessar o site.</li></ul>
+  <p>Pedimos o mínimo necessário. Não é preciso escrever detalhes de saúde nos formulários: esses assuntos são tratados na conversa com a equipe.</p>
+  <h3>3. Para que usamos os dados</h3>
+  <ul><li>Responder a dúvidas e pedidos de contato, agendamento e visita.</li><li>Organizar o atendimento e a comunicação com a família.</li><li>Receber candidaturas do "Trabalhe conosco".</li><li>Avaliar depoimentos, que só são publicados com a sua autorização.</li><li>Cumprir obrigações legais e proteger direitos da clínica.</li></ul>
+  <h3>4. Bases legais</h3>
+  <p>Tratamos os dados com base no seu consentimento, na execução de procedimentos preliminares a um contrato de prestação de serviços, no cumprimento de obrigações legais e, quando aplicável, na tutela da saúde, em procedimento realizado por profissionais de saúde.</p>
+  <h3>5. Compartilhamento</h3>
+  <p>Não vendemos dados. As informações são acessadas pela equipe da clínica e por fornecedores que apoiam a operação (por exemplo, hospedagem do site e plataformas de mensagens), apenas no necessário. Podemos compartilhar dados com autoridades quando a lei exigir. Os dados informados nos formulários são recebidos pela clínica por e-mail, inclusive os de etapas de contato já concluídas em um pedido de agendamento que não tenha sido finalizado. Ao enviar uma mensagem pelo WhatsApp, valem também os termos e a política de privacidade da plataforma.</p>
+  <h3>6. Segurança e armazenamento</h3>
+  <p>Adotamos medidas técnicas e administrativas para proteger os dados contra acesso não autorizado, perda e uso indevido. Guardamos os dados pelo tempo necessário para cumprir as finalidades acima e as obrigações legais e éticas aplicáveis aos serviços de saúde.</p>
+  <h3>7. Crianças e adolescentes</h3>
+  <p>Os formulários do site são destinados a pais e responsáveis legais maiores de 18 anos. Os dados de crianças e adolescentes são tratados no melhor interesse deles, conforme a LGPD e o Estatuto da Criança e do Adolescente, e informados pelo responsável.</p>
+  <h3>8. Seus direitos</h3>
+  <p>Você pode pedir a confirmação do tratamento, o acesso, a correção, a anonimização ou eliminação de dados, a portabilidade, informações sobre compartilhamento e a revogação do consentimento, nos termos do art. 18 da LGPD. Basta falar com a equipe pelo contato acima.</p>
+  <h3>9. Cookies</h3>
+  <p>Este site usa apenas o armazenamento do navegador necessário para o funcionamento das páginas e dos formulários.</p>
+  <h3>10. Atualizações</h3>
+  <p>Podemos atualizar esta política. A versão vigente fica sempre disponível neste site.</p>
+  <h3>11. Lei aplicável e foro</h3>
+  <p>Esta política segue as leis brasileiras. Eventuais controvérsias serão resolvidas no foro da comarca de Osasco/SP, salvo disposição legal em contrário.</p>
+</div></dialog>
+
+<dialog id="m-termos" aria-labelledby="te-t"><div class="md legaltxt">
+  <button class="x" type="button" data-close aria-label="Fechar">×</button>
+  <h2 id="te-t">Termos de uso</h2>
+  <p class="sub">Ao usar este site, você concorda com os termos abaixo. Leia também a Política de Privacidade.</p>
+  <h3>1. Finalidade do site</h3>
+  <p>O site apresenta a Clínica Cajeow Desenvolvimento Humano, as suas especialidades e a forma de funcionamento do atendimento, e oferece canais para contato, agendamento, visita, dúvidas e candidaturas.</p>
+  <h3>2. Informações e guia de desenvolvimento infantil</h3>
+  <p>Os conteúdos do site e o guia de desenvolvimento infantil são informativos e educativos. Não constituem triagem, avaliação, anamnese, diagnóstico, prescrição ou orientação clínica individual, e não substituem protocolos, escalas validadas nem a avaliação de um médico ou de outro profissional de saúde. Em caso de dúvida sobre a saúde ou o desenvolvimento de alguém, procure um profissional.</p>
+  <h3>3. Agendamentos e contatos</h3>
+  <p>Os pedidos feitos pelo site são solicitações. O agendamento só é confirmado pela equipe da clínica, de acordo com a disponibilidade e com as condições de cada forma de atendimento (particular, reembolso ou convênio).</p>
+  <h3>4. Informações verdadeiras</h3>
+  <p>Você se compromete a informar dados verdadeiros e a não inserir informações de terceiros sem autorização.</p>
+  <h3>5. Depoimentos</h3>
+  <p>Depoimentos enviados pelo site são analisados pela equipe e só são publicados com a autorização de quem os enviou. A clínica pode deixar de publicar conteúdos que não respeitem as normas éticas dos conselhos profissionais.</p>
+  <h3>6. Segurança e conduta</h3>
+  <p>Cuide do seu dispositivo e das suas credenciais. Não é permitido usar o site para fins ilícitos, divulgar dados de terceiros ou tentar acessar áreas restritas sem autorização. O descumprimento pode levar à suspensão do acesso.</p>
+  <h3>7. Limitação de responsabilidade</h3>
+  <p>Fazemos o possível para manter o site disponível e atualizado, mas ele pode sofrer interrupções ou falhas de conexão, e não nos responsabilizamos por problemas alheios ao nosso controle.</p>
+  <h3>8. Propriedade intelectual</h3>
+  <p>Textos, imagens, marca e identidade visual da clínica pertencem à Clínica Cajeow e não podem ser reproduzidos sem autorização. As marcas das operadoras de saúde pertencem aos seus titulares e são exibidas apenas para informar os convênios atendidos.</p>
+  <h3>9. Atualizações</h3>
+  <p>Estes termos podem ser alterados. A versão vigente fica disponível neste site.</p>
+  <h3>10. Lei aplicável e foro</h3>
+  <p>Estes termos seguem as leis brasileiras. Eventuais controvérsias serão resolvidas no foro da comarca de Osasco/SP, salvo disposição legal em contrário.</p>
+</div></dialog>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="app.js"></script>
+
+</body></html>
